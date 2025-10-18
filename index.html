@@ -6,7 +6,7 @@
     <meta name="description" content="Welcome to 84 Sea Lodge! Nestled on Lagoon Drive, just steps from the sand,
     this stylish, newly renovated apartment offers the perfect blend of comfort and luxury. Whether you’re planning a
     weekend getaway or an extended stay, this upmarket retreat has everything you need to relax, recharge, and explore.">
-    <link rel="icon" type="image/svg+xml" href="src/logo.png"/>
+    <link rel="icon" type="image/svg+xml" href="src/logo.svg"/>
     <link href="./dist/output.css" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
@@ -16,7 +16,7 @@
         <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-                <img src="src/logo.png" width="44" alt="logo">
+                <img src="src/logo.svg" width="44" alt="logo">
                 <a href="index.html" class="text-2xl font-bold text-blue-800">
                    84 Sea Lodge
                 </a>
@@ -69,832 +69,824 @@
         </div>
     </header>
 
-<div class="pt-20">
-    <!-- Title -->
-    <div class="flex items-center justify-center h-30 sm:h-40 px-4 max-w-6xl mx-auto">
-        <h1 class="text-4xl md:text-7xl font-bold text-blue-900">84 Sea Lodge</h1>
-    </div>
-
-    <!-- Headline -->
-    <div class="flex items-center justify-center text-center px-4 max-w-6xl mx-auto">
-        <h1 class="text-2xl md:text-4xl font-bold text-blue-900">Your Peaceful Stay in the Heart of Durban</h1>
-    </div>
-
-    <!-- Registration / Payment Buttons -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 my-6 px-8 sm:px-2">
-        <!--<a
-            class="flex items-center justify-center text-white text-xl sm:text-2xl bg-blue-800
-                   px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                   transition-colors duration-300 ease-in-out"
-            href="https://www.paypal.com/ncp/payment/FJG7HA4JRAJGQ"
-            target="_blank"
-        >
-            Make a Payment
-        </a> -->
-        <a
-            class="flex items-center justify-center text-white text-xl sm:text-2xl bg-blue-800
-                   px-12 py-3 mt-4 rounded-md w-full sm:w-auto
-                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                   transition-colors duration-300 ease-in-out"
-            href=https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf
-            target="_blank"
-        >
-            Book Now
-        </a>
-    </div>
-
-    <!-- Front Page Images-->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto px-4 max-w-6xl">
-        <img src="src/images/index/top-1.JPG" class="w-full h-full object-cover" alt="Example Suite" />
-        <img src="src/images/index/top-2.jpg" class="w-full h-full object-cover" alt="Outside View" />
-        <img src="src/images/index/top-3.JPG" class="w-full h-full object-cover" alt="Common Area" />
-    </div>
-
-    <!-- Main Section -->
-    <div class="flex flex-row justify-between items-center h-auto px-4 max-w-6xl mx-auto mt-4">
-        <h1 class="text-xl sm:text-2xl md:text-3xl text-blue-800 font-medium">
-            Explore your dream beachside escape!
-        </h1>
-        <a
-                class="flex items-center justify-center text-white text-base sm:text-lg md:text-xl bg-blue-800
-           px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-md
-           hover:bg-blue-100 hover:text-blue-600 font-medium
-           transition-colors duration-300 ease-in-out"
-                href="#rooms"
-        >
-            Step Inside
-        </a>
-    </div>
-
-
-
-    <!-- Description -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto px-4 mt-8 gap-6">
-        <p class="text-xl md:text-2xl text-blue-800">
-            Welcome to 84 Sea Lodge! Nestled on Lagoon Drive, just steps from the sand, this stylish, newly renovated
-            apartment offers the perfect blend of comfort and luxury. Whether you’re planning a weekend getaway or an
-            extended stay, this upmarket retreat has everything you need to relax, recharge, and explore.
-        </p>
-        <img src="src/images/index/escape-image.jpg" class="w-full object-cover" alt="Example Suite 2" />
-    </div>
-
-    <!-- Amenities -->
-    <div id="amenities" class="md:h-20"></div>
-    <div
-         class="flex items-center justify-center h-20 px-4 max-w-6xl mx-auto mt-8">
-        <h1 class="text-4xl text-blue-800 font-medium"> Amenities </h1>
-    </div>
-
-    <!-- Amenities Description -->
-    <div
-        class="flex items-center justify-center px-4 max-w-6xl mx-auto mb-4">
-        <p class="text-xl md:text-2xl text-blue-800 text-center">
-            At Mongi Guest House, every stay is designed for comfort, style, and convenience. Choose from a range of
-            beautifully appointed ensuite rooms to suit your needs: from cozy <span class="font-medium">Economy</span>
-            and <span class="font-medium">Standard</span> rooms to spacious <span class="font-medium">Superior</span>,
-            <span class="font-medium">Deluxe</span>, and <span class="font-medium">Junior</span> Suites. Each room
-            blends modern design with homely touches to create the perfect retreat after a day in Harare.
-        </p>
-    </div>
-
-    <!-- Amenities-Rooms -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionRooms', 'arrowIconRooms')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-3xl">Rooms</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconRooms" class="w-5 h-5 transform transition-transform duration-300"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionRooms"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0
-                  border-blue-800 border-t-blue-800/0">
-            <div class="grid grid-cols-1 md:grid-cols-2 p-6">
-                <div
-                    class="text-xl text-blue-800 md:order-1 order-2">
-                    <p class="mb-6">
-                        Every ensuite includes a variety of thoughtful features, such as:
-                    </p>
-                    <ul class="pl-8 list-disc space-y-1 font-medium mb-8">
-                        <li>Flat Screen Smart TV <span class="font-normal">with</span> Digital Satellite Television (DSTV)</li>
-                        <li>Unlimited High Speed Wi-Fi (Fiber)</li>
-                        <li>Mini Fridge <span class="font-normal italic">(available in all rooms except Economy & Standard Double)</span></li>
-                        <li>Housekeeping Service Included</li>
-                        <li>Hotel Quality Bed & Linens</li>
-                        <li>Private Bathroom <span class="font-normal">with</span> Walk-In Shower & Complementary Toiletries</li>
-                        <li>Tub Sofa <span class="font-normal">and</span> Electric Kettle <span class="font-normal">for comfort and convenience</span></li>
-                        <li>Lamps, Portable Fans, USB Charging Port, <span class="font-normal">and Full-Size Mirror</span></li>
-                        <li>Desk & Chair, Cabinet Drawer, and Nightstand <span class="font-normal italic">(except Standard Ensuites)</span></li>
-                    </ul>
-                    <a
-                        class="md:hidden max-md:flex items-center justify-center text-white text-2xl bg-blue-800 px-12
-                               py-3 h-16 w-auto hover:bg-blue-100 hover:text-blue-600 rounded-md font-medium
-                               transition-colors duration-300 ease-in-out mt-auto md:mt-0"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                    >
-                        Book Now
-                    </a>
-                </div>
-                <div
-                    class="md:order-2 order-1 grid place-items-center gap-4 max-md:mb-4">
-                    <img
-                        src="src/images/index/amenity-room.jpg"
-                        class="w-full h-auto max-w-lg object-contain"
-                        alt="Example Suite 2"
-                    />
-                    <a
-                            class="max-md:hidden text-white text-2xl bg-blue-800 px-12 py-3 h-16 w-auto hover:bg-blue-100
-                                 hover:text-blue-600 rounded-md font-medium transition-colors duration-300 ease-in-out
-                                 items-center mt-auto md:mt-0"
-                            href="https://book.nightsbridge.com/37265" target="_blank"
-                    >
-                        Book Now
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Amenities-Lodge -->
-    <section class="max-w-6xl mx-auto px-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionLodge', 'arrowIconLodge')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-3xl">Lodge</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconLodge" class="w-5 h-5 transform transition-transform duration-300"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionLodge"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0
-                  border-blue-800 border-t-blue-800/0">
-            <div class="grid grid-cols-1 md:grid-cols-2 p-6">
-                <div
-                        class="text-xl text-blue-800 md:order-1 order-2">
-                    <p class="mb-6">
-                        Beyond your private ensuite, Mongi Guest House offers a variety of amenities for all guests to
-                        enjoy:
-                    </p>
-                    <ul class="pl-8 list-disc space-y-1 font-medium mb-8">
-                        <li>Breakfast, Lunch & Dinner <span class="font-normal">available daily</span></li>
-                        <li>Snacks & Beverages <span class="font-normal">for purchase</span></li>
-                        <li>24-Hour Front Desk Service</li>
-                        <li>Shared TV/Lounge Area <span class="font-normal">and</span> Microwave Access</li>
-                        <li>DSTV & Unlimited Fiber Wi-Fi <span class="font-normal">throughout the property</span> </li>
-                        <li>Gated, Free Parking <span class="font-normal">with</span> 24-hour security </li>
-                        <li>Local & Airport Transportation <span class="font-normal">upon request</span></li>
-                        <li>Beautiful Garden with Seating Areas <span class="font-normal">for relaxation</span></li>
-                        <li>Reliable Hot Water</li>
-                        <li>Backup Power Supply (Solar + Generator) <span class="font-normal">for uninterrupted comfort</span></li>
-                    </ul>
-                    <a
-                            class="md:hidden max-md:flex items-center justify-center text-white text-2xl bg-blue-800 px-12
-                               py-3 h-16 w-auto hover:bg-blue-100 hover:text-blue-600 rounded-md font-medium
-                               transition-colors duration-300 ease-in-out mt-auto md:mt-0"
-                            href="https://book.nightsbridge.com/37265" target="_blank"
-                    >
-                        Book Now
-                    </a>
-                </div>
-                <div
-                        class="md:order-2 order-1 grid place-items-center gap-4 max-md:mb-4">
-                    <img
-                            src="src/images/index/top-1.JPG"
-                            class="w-full h-auto max-w-lg object-contain"
-                            alt="Example Suite 2"
-                    />
-                    <a
-                            class="max-md:hidden text-white text-2xl bg-blue-800 px-12 py-3 h-16 w-auto hover:bg-blue-100
-                                 hover:text-blue-600 rounded-md font-medium transition-colors duration-300 ease-in-out
-                                 items-center mt-auto md:mt-0"
-                            href="https://book.nightsbridge.com/37265" target="_blank"
-                    >
-                        Book Now
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Amenities Closure -->
-    <div class="flex flex-col space-y-4 items-center justify-center text-center px-4 max-w-6xl mx-auto mt-4">
-        <h2 class="text-2xl md:text-3xl text-blue-900 font-medium">Your Comfort is Our Priority</h2>
-        <p class="text-xl md:text-2xl text-blue-900">
-            Whether you’re visiting Harare for business or leisure, Mongi Guest House offers a calm, secure, and
-            welcoming atmosphere combining <span class="font-medium">modern conveniences</span>,
-            <span class="font-medium">exceptional service</span>, and the warmth of <span class="font-medium">Zimbabwean
-            hospitality</span>.
-        </p>
-    </div>
-
-    <div id="rooms" class="md:h-10"></div>
-
-    <!-- Rooms -->
-    <div class="flex items-center justify-center h-16 px-4 max-w-6xl mx-auto mt-8">
-        <h1 class="text-4xl text-blue-800 font-medium"> Our Rooms </h1>
-    </div>
-
-    <div class="flex items-center justify-between text-center md:px-8 max-w-6xl mx-auto mt-6 text-blue-800">
-        <div class="mx-auto px-2 md:px-4">
-            <div class="overflow-x-auto rounded-lg border border-gray-200">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-100">
-                    <tr>
-                        <th class="px-4 py-3 text-center text-xl font-semibold text-blue-800">Room</th>
-                        <th class="px-4 py-3 text-center text-xl font-semibold text-blue-800">Description</th>
-                        <th class="px-4 py-3 text-left text-xl font-semibold text-blue-800"></th>
-                    </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200">
-
-                    <!-- Rooms-Junior -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Junior Suite with Balcony</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Our most luxurious suite with private balcony and spa-inspired bathroom.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                    onclick="navigateToRoom('junior')"
-                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                    onclick="navigateToGallery('junior-g')"
-                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Rooms-Family -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Deluxe Family Room</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Spacious and flexible — perfect for families or couples seeking extra comfort.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                    onclick="navigateToRoom('family')"
-                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                    onclick="navigateToGallery('family-g')"
-                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Rooms-Queen -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Deluxe Queen Suite</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Modern elegance and cozy sophistication; ideal for couples.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                        onclick="navigateToRoom('queen')"
-                                        class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                        onclick="navigateToGallery('queen-g')"
-                                        class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Rooms-Superior -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Superior Room</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Practical comfort with elegant design and hotel-quality amenities.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                        onclick="navigateToRoom('superior')"
-                                        class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                        onclick="navigateToGallery('superior-g')"
-                                        class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Rooms-Standard -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Standard Room</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Cozy and affordable with all essential comforts.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                        onclick="navigateToRoom('standard')"
-                                        class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                        onclick="navigateToGallery('standard-g')"
-                                        class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Rooms-Economy -->
-                    <tr class="">
-                        <td class="px-4 py-3 text-xl font-medium text-blue-800">Economy Room</td>
-                        <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
-                            Compact, comfortable, and budget-friendly for short stays.</td>
-                        <td class="px-2 py-3 text-xl text-gray-800">
-                            <div class="flex max-md:flex-col items-center gap-3">
-                                <a
-                                        onclick="navigateToRoom('economy')"
-                                        class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Details
-                                </a>
-                                <a
-                                        onclick="navigateToGallery('economy-g')"
-                                        class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                                    hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                                    ease-in-out whitespace-nowrap cursor-pointer"
-                                >
-                                    View Gallery
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="center space-x-2 md:space-x-6 mt-6">
-        <p class="text-blue-800 font-medium text-md md:text-2xl">Discover Your Perfect Getaway.</p>
-        <a
-            class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
-                   hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
-                   ease-in-out whitespace-nowrap"
-            href="https://book.nightsbridge.com/37265" target="_blank"
-        >
-            Book Your Stay
-        </a>
-    </div>
-
-
-    <!-- Location -->
-    <div class="flex items-center justify-center text-blue-800 font-semibold mt-12 text-4xl">Convenient Location</div>
-    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 p-6 max-w-6xl mx-auto gap-4">
-        <!-- Location-Description -->
-        <div class="flex items-center justify-center gap-4 text-blue-800 md:text-xl text-center order-2 md:order-1">
-            <!-- Location-Location -->
-            <div class="pr-4 md:pr-8 py-2 border-r border-r-blue-800 border-r-2 space-y-2 font-medium">
-                <p class="font-bold md:text-2xl flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="lucide lucide-map-pin-icon lucide-map-pin justify-center">"
-                    >
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8
-                         8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    <span class="mr-4">Location</span>
-                </p>
-                <p>Airport</p>
-                <p>CBD</p>
-                <p>Chapman Golf Club</p>
-                <p>Royal Harare Golf Club</p>
-                <p>Harare Botanical Gardens</p>
-                <p>Mukuvisi Woodlands</p>
-            </div>
-            <!-- Location-Distance -->
-            <div class="space-y-2 font-medium">
-                <p class="font-bold md:text-2xl flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="lucide lucide-timer-icon lucide-timer"
-                    >
-                        <line x1="10" x2="14" y1="2" y2="2"/>
-                        <line x1="12" x2="15" y1="14" y2="11"/>
-                        <circle cx="12" cy="14" r="8"/>
-                    </svg>
-                    <span class="mr-4">Distance</span>
-                </p>
-                <p>18 min.</p>
-                <p>8 min.</p>
-                <p>7 min.</p>
-                <p>12 min.</p>
-                <p>15 min.</p>
-                <p>4 min.</p>
-            </div>
+<div class="bg-[url('/src/images/sealodge-bg.jpg')] bg-cover bg-center bg-no-repeat">
+    <div class="pt-20 pb-10 bg-black/20">
+        <!-- Title -->
+        <div class="center h-24 sm:h-34 px-4 max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-7xl font-bold text-blue-900">84 Sea Lodge</h1>
         </div>
 
-        <!-- Map -->
-        <div class="flex flex-col items-center justify-center gap-2 order-1 md:order-2">
-            <div class="transform hover:scale-102 transition-transform duration-300 flex items-center justify-center">
-                <a
-                    href="https://www.google.com/maps/place/Mongi+Guest+House/@-17.8342272,31.0311847,13z/data=!4m9!3m8!1s0x1931bb396a739083:0x48e93fb7e998c39c!5m2!4m1!1i2!8m2!3d-17.8312273!4d31.0954863!16s%2Fg%2F11ltsd091j?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                    class="relative group block"
-                >
-                    <img src="src/location.png" alt="location" class="border border-blue-900 w-120">
-                    <div
-                        class="absolute inset-0 bg-black flex items-center justify-center opacity-0
-                        group-hover:opacity-70 transition-opacity duration-300"
-                    >
-                        <span class="pt-4 text-white text-xl font-semibold opacity-100">Open in Google Maps</span>
-                    </div>
-                </a>
-            </div>
+        <!-- Headline -->
+        <div class="center text-center px-4 max-w-6xl mx-auto">
+            <h1 class="text-2xl md:text-4xl font-bold text-blue-900">Your Peaceful Stay in the Heart of Durban</h1>
+        </div>
+
+        <!-- Registration / Payment Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 my-6 px-8 sm:px-2">
             <a
-                    href="gallery.html"
-                    class="md:hidden text-white text-xl bg-blue-800 px-4 py-2 rounded-md mt-4 h-12
-                         w-auto hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors
-                         duration-300 ease-in-out items-center"
+                class="center text-white text-xl sm:text-2xl bg-blue-800
+                       px-12 py-3 mt-4 rounded-md w-full sm:w-auto
+                       hover:bg-blue-100 hover:text-blue-600 font-medium
+                       transition-colors duration-300 ease-in-out"
+                href=https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf
+                target="_blank"
             >
-                Open in Google Maps
+                Book Your Stay
             </a>
         </div>
     </div>
+</div>
+
+<!-- Front Page Images-->
+<div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto px-4 max-w-6xl">
+    <img src="src/images/index/top-1.JPG" class="w-full h-full object-cover" alt="Example Suite" />
+    <img src="src/images/index/top-2.jpg" class="w-full h-full object-cover" alt="Outside View" />
+    <img src="src/images/index/top-3.JPG" class="w-full h-full object-cover" alt="Common Area" />
+</div>
+
+<!-- Main Section -->
+<div class="flex flex-row justify-between items-center h-auto px-4 max-w-6xl mx-auto mt-4">
+    <h1 class="text-xl sm:text-2xl md:text-3xl text-blue-800 font-medium">
+        Explore your dream beachside escape!
+    </h1>
+    <a
+            class="center text-white text-base sm:text-lg md:text-xl bg-blue-800
+       px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-md
+       hover:bg-blue-100 hover:text-blue-600 font-medium
+       transition-colors duration-300 ease-in-out"
+            href="#rooms"
+    >
+        Step Inside
+    </a>
+</div>
 
 
-    <!-- Front Page Images (Bottom) -->
-    <div class="flex items-center justify-center mt-12 p-4 max-w-6xl mx-auto gap-3">
-        <span class="text-blue-800 text-xl md:text-2xl md:font-medium">Follow Us on our socials:</span>
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/people/Mongi-Guest-House/61566407660600/?mibextid=LQQJ4d"
-           target="_blank"
-           class="transform hover:scale-105 transition-transform duration-300"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                 class="lucide lucide-facebook-icon lucide-facebook text-blue-800"
-            >
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-            </svg>
-        </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/mongilodge?igsh=YXltY3BnMnF3aHh6&utm_source=qr"
-           target="_blank"
-           class="transform hover:scale-105 transition-transform duration-300"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                 class="lucide lucide-instagram-icon lucide-instagram text-blue-800"
-            >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-            </svg>
-        </a>
-        <!-- Tiktok -->
-        <a href="https://www.tiktok.com/@mongilodge?_t=ZT-90KreGMDE1W&_r=1"
-           target="_blank"
-           class="transform hover:scale-105 transition-transform duration-300"
-        >
-            <img src="src/images/tiktok.svg" alt="TikTok" class="w-9">
-        </a>
-    </div>
 
+<!-- Description -->
+<div class="grid grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto px-4 mt-8 gap-6">
+    <p class="text-xl md:text-2xl text-blue-800">
+        Welcome to 84 Sea Lodge! Nestled on Lagoon Drive, just steps from the sand, this stylish, newly renovated
+        apartment offers the perfect blend of comfort and luxury. Whether you’re planning a weekend getaway or an
+        extended stay, this upmarket retreat has everything you need to relax, recharge, and explore.
+    </p>
+    <img src="src/images/index/escape-image.jpg" class="w-full object-cover" alt="Example Suite 2" />
+</div>
 
-    <div class="grid grid-cols-3 gap-4 mx-auto px-4 max-w-6xl mt-8">
-        <div class="aspect-[4/3] overflow-hidden">
-            <img src="src/images/index/bottom1.JPG" class="w-full h-full object-cover" alt="Dining Area" />
-        </div>
-        <div class="aspect-[4/3] overflow-hidden">
-            <img src="src/images/index/bottom2.JPG" class="w-full h-full object-cover" alt="Outside View" />
-        </div>
-        <div class="aspect-[4/3] overflow-hidden">
-            <img src="src/images/index/bottom3.jpg" class="w-full h-full object-cover" alt="Bathroom" />
-        </div>
-    </div>
-    <div class="flex items-center justify-center p-4 max-w-6xl mx-auto">
-        <a
-                href="gallery.html"
-                class="text-white text-2xl bg-blue-800 px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-md mt-4 h-14
-                         w-auto hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors
-                         duration-300 ease-in-out items-center"
-        >
-            View Gallery
-        </a>
-    </div>
+<!-- Amenities -->
+<div id="amenities" class="md:h-20"></div>
+<div
+     class="center h-20 px-4 max-w-6xl mx-auto mt-8">
+    <h1 class="text-4xl text-blue-800 font-medium"> Amenities </h1>
+</div>
 
+<!-- Amenities Description -->
+<div
+    class="center px-4 max-w-6xl mx-auto mb-4">
+    <p class="text-xl md:text-2xl text-blue-800 text-center">
+        At Mongi Guest House, every stay is designed for comfort, style, and convenience. Choose from a range of
+        beautifully appointed ensuite rooms to suit your needs: from cozy <span class="font-medium">Economy</span>
+        and <span class="font-medium">Standard</span> rooms to spacious <span class="font-medium">Superior</span>,
+        <span class="font-medium">Deluxe</span>, and <span class="font-medium">Junior</span> Suites. Each room
+        blends modern design with homely touches to create the perfect retreat after a day in Harare.
+    </p>
+</div>
 
-    <!-- Frequently Asked Questions -->
-    <section class="max-w-6xl mx-auto px-4 mt-4">
-        <div class="center text-4xl text-blue-800 mb-6">Frequently Asked Questions</div>
+<!-- Amenities-Rooms -->
+<section class="max-w-6xl mx-auto px-4 py-0.5">
+    <!-- Toggle button -->
+    <button
+            onclick="toggleSection('expandableSectionRooms', 'arrowIconRooms')"
+            class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
+            px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
+    >
+        <span class="text-3xl">Rooms</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconRooms" class="w-5 h-5 transform transition-transform duration-300"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
 
-        <!-- FAQ #1 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ1', 'arrowIconFAQ1', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-        >
-            <span class="text-xl pl-2">Do you have Wi-Fi available?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ1" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ1"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-                    <p class="ml-2">
-                        Absolutely! We offer unlimited high-speed fiber Wi-Fi throughout the entire property — perfect
-                        for work, streaming, or staying connected.
-                    </p>
-                </div>
-        </div>
-
-        <!-- FAQ #2 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ2', 'arrowIconFAQ2', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
-                   text-left"
-        >
-            <span class="text-xl pl-2">What happens during power cuts?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ2" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ2"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-                <p class="ml-2">
-                    No worries! The guest house is fully equipped with backup solar power and a generator, ensuring
-                    continuous electricity and hot water at all times.
+    <!-- Collapsible content -->
+    <div id="expandableSectionRooms"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0
+              border-blue-800 border-t-blue-800/0">
+        <div class="grid grid-cols-1 md:grid-cols-2 p-6">
+            <div
+                class="text-xl text-blue-800 md:order-1 order-2">
+                <p class="mb-6">
+                    Every ensuite includes a variety of thoughtful features, such as:
                 </p>
-            </div>
-        </div>
-
-        <!-- FAQ #3 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ3', 'arrowIconFAQ3', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-        >
-            <span class="text-xl pl-2">Do you offer airport pickup?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ3" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ3"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-                <p class="ml-2">
-                    Yes! We provide airport transfers for your convenience. Simply tick the option on the booking form
-                    or WhatsApp us your flight details, and we’ll handle the rest.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ #4 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ4', 'arrowIconFAQ4', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
-            text-left"
-        >
-            <span class="text-xl pl-2">Which room is the most spacious?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ4" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ4"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-                <p class="ml-2">
-                    Our Junior Suite with Balcony is the most spacious — featuring a super-king bed, private balcony,
-                    and a spa-style bath for ultimate relaxation.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ #5 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ5', 'arrowIconFAQ5', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-        >
-            <span class="text-xl pl-2">Do you have family rooms?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ5" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ5"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-                <p class="ml-2">
-                    Yes — our Deluxe Family Room is ideal for families or small groups. It includes two ¾ beds that can
-                    convert into a super-king bed for added flexibility.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ #6 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ6', 'arrowIconFAQ6', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-        >
-            <span class="text-xl pl-2">Are meals available?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ6" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ6"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
-                Absolutely!
-                <ul class="pl-8 list-disc space-y-1">
-                    <li>Breakfast: Available 24/7</li>
-                    <li>Lunch & Dinner: 11:00 AM – 10:00 PM</li>
-                    <li>Snacks: Available anytime</li>
+                <ul class="pl-8 list-disc space-y-1 font-medium mb-8">
+                    <li>Flat Screen Smart TV <span class="font-normal">with</span> Digital Satellite Television (DSTV)</li>
+                    <li>Unlimited High Speed Wi-Fi (Fiber)</li>
+                    <li>Mini Fridge <span class="font-normal italic">(available in all rooms except Economy & Standard Double)</span></li>
+                    <li>Housekeeping Service Included</li>
+                    <li>Hotel Quality Bed & Linens</li>
+                    <li>Private Bathroom <span class="font-normal">with</span> Walk-In Shower & Complementary Toiletries</li>
+                    <li>Tub Sofa <span class="font-normal">and</span> Electric Kettle <span class="font-normal">for comfort and convenience</span></li>
+                    <li>Lamps, Portable Fans, USB Charging Port, <span class="font-normal">and Full-Size Mirror</span></li>
+                    <li>Desk & Chair, Cabinet Drawer, and Nightstand <span class="font-normal italic">(except Standard Ensuites)</span></li>
                 </ul>
-                We also cater to special dietary requests — just let us know in advance.
-            </div>
-        </div>
-
-        <!-- FAQ #7 -->
-        <button
-            onclick="toggleSection('expandableSectionFAQ7', 'arrowIconFAQ7', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-        >
-            <span class="text-xl pl-2">Still have questions?</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFAQ7" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFAQ7"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
-                Message us on WhatsApp <span class="font-semibold">+263 78 310 6946</span> or email
-                <a href="mailto:stay@mongilodge.com" class="font-semibold">stay@mongilodge.com</a>
-                — we’ll be happy to help!
-            </div>
-        </div>
-
-    </section>
-
-    <div class="h-10"></div>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 h-140 sm:h-100">
-        <div class="max-w-7xl grid grid-cols-2 md:grid-cols-4 mx-auto items-start justify-between p-6">
-            <!-- Address -->
-            <div class="text-center text-white">
-                <h1 class="text-3xl font-medium underline decoration-2">Address</h1>
-                <div class="flex flex-col items-center">
-                    <p class="font-light text-xl">17 Airdrie Road</p>
-                    <p class="font-light text-xl">Eastlea, Harare</p>
-                    <p class="font-light text-xl">Zimbabwe</p>
-                </div>
-            </div>
-            <!-- Contact -->
-            <div class="text-center text-white">
-                <h1 class="text-3xl font-medium underline decoration-2">Contact</h1>
-                <p class="font-light">stay@mongilodge.com</p>
-                <p class="font-light">Call/Sms/WA +263783106946</p>
-                <p class="font-light">Call +263 71 160 8259</p>
-                <p class="font-light">Landline +263 24 249 6297</p>
-            </div>
-            <!-- Follow -->
-            <div class="text-center text-white">
-                <h1 class="text-3xl font-medium underline decoration-2">Follow</h1>
-                <div class="flex flex-col items-center">
-                    <a
-                            class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                            href="https://www.facebook.com/people/Mongi-Guest-House/61566407660600/?mibextid=LQQJ4d"
-                            target="_blank"
-                    >
-                        Facebook
-                    </a>
-                    <a
-                            class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                            href="https://www.instagram.com/mongilodge?igsh=YXltY3BnMnF3aHh6&utm_source=qr"
-                            target="_blank"
-                    >
-                        Instagram
-                    </a>
-                    <a
-                            class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                            href="https://www.tiktok.com/@mongilodge?_t=ZT-90KreGMDE1W&_r=1"
-                            target="_blank"
-                    >
-                        TikTok
-                    </a>
-                </div>
-
-            </div>
-            <!-- Legal -->
-            <div class="text-center text-white">
-                <h1 class="text-3xl font-medium underline decoration-2">Legal</h1>
                 <a
-                        class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                        href="privacy-policy.html"
+                    class="md:hidden max-md:center text-white text-2xl bg-blue-800 px-12
+                           py-3 h-16 w-auto hover:bg-blue-100 hover:text-blue-600 rounded-md font-medium
+                           transition-colors duration-300 ease-in-out mt-auto md:mt-0"
+                    href="https://book.nightsbridge.com/37265" target="_blank"
                 >
-                    Privacy Policy
+                    Book Now
+                </a>
+            </div>
+            <div
+                class="md:order-2 order-1 grid place-items-center gap-4 max-md:mb-4">
+                <img
+                    src="src/images/index/amenity-room.jpg"
+                    class="w-full h-auto max-w-lg object-contain"
+                    alt="Example Suite 2"
+                />
+                <a
+                        class="max-md:hidden text-white text-2xl bg-blue-800 px-12 py-3 h-16 w-auto hover:bg-blue-100
+                             hover:text-blue-600 rounded-md font-medium transition-colors duration-300 ease-in-out
+                             items-center mt-auto md:mt-0"
+                        href="https://book.nightsbridge.com/37265" target="_blank"
+                >
+                    Book Now
                 </a>
             </div>
         </div>
-        <h1 class="text-center mx-auto max-w-6xl text-6xl text-white mt-10">Mongi Guest House</h1>
-        <p class="text-center mx-auto mt-4 max-w-6xl text-xl text-white">
-            &copy; <span id="year"></span> Mongi Guest House LLC.
-        </p>
 
-    </footer>
+    </div>
+</section>
+
+<!-- Amenities-Lodge -->
+<section class="max-w-6xl mx-auto px-4">
+    <!-- Toggle button -->
+    <button
+            onclick="toggleSection('expandableSectionLodge', 'arrowIconLodge')"
+            class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
+            px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
+    >
+        <span class="text-3xl">Lodge</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconLodge" class="w-5 h-5 transform transition-transform duration-300"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionLodge"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0
+              border-blue-800 border-t-blue-800/0">
+        <div class="grid grid-cols-1 md:grid-cols-2 p-6">
+            <div
+                    class="text-xl text-blue-800 md:order-1 order-2">
+                <p class="mb-6">
+                    Beyond your private ensuite, Mongi Guest House offers a variety of amenities for all guests to
+                    enjoy:
+                </p>
+                <ul class="pl-8 list-disc space-y-1 font-medium mb-8">
+                    <li>Breakfast, Lunch & Dinner <span class="font-normal">available daily</span></li>
+                    <li>Snacks & Beverages <span class="font-normal">for purchase</span></li>
+                    <li>24-Hour Front Desk Service</li>
+                    <li>Shared TV/Lounge Area <span class="font-normal">and</span> Microwave Access</li>
+                    <li>DSTV & Unlimited Fiber Wi-Fi <span class="font-normal">throughout the property</span> </li>
+                    <li>Gated, Free Parking <span class="font-normal">with</span> 24-hour security </li>
+                    <li>Local & Airport Transportation <span class="font-normal">upon request</span></li>
+                    <li>Beautiful Garden with Seating Areas <span class="font-normal">for relaxation</span></li>
+                    <li>Reliable Hot Water</li>
+                    <li>Backup Power Supply (Solar + Generator) <span class="font-normal">for uninterrupted comfort</span></li>
+                </ul>
+                <a
+                        class="md:hidden max-md:center text-white text-2xl bg-blue-800 px-12
+                           py-3 h-16 w-auto hover:bg-blue-100 hover:text-blue-600 rounded-md font-medium
+                           transition-colors duration-300 ease-in-out mt-auto md:mt-0"
+                        href="https://book.nightsbridge.com/37265" target="_blank"
+                >
+                    Book Now
+                </a>
+            </div>
+            <div
+                    class="md:order-2 order-1 grid place-items-center gap-4 max-md:mb-4">
+                <img
+                        src="src/images/index/top-1.JPG"
+                        class="w-full h-auto max-w-lg object-contain"
+                        alt="Example Suite 2"
+                />
+                <a
+                        class="max-md:hidden text-white text-2xl bg-blue-800 px-12 py-3 h-16 w-auto hover:bg-blue-100
+                             hover:text-blue-600 rounded-md font-medium transition-colors duration-300 ease-in-out
+                             items-center mt-auto md:mt-0"
+                        href="https://book.nightsbridge.com/37265" target="_blank"
+                >
+                    Book Now
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Amenities Closure -->
+<div class="flex flex-col space-y-4 items-center justify-center text-center px-4 max-w-6xl mx-auto mt-4">
+    <h2 class="text-2xl md:text-3xl text-blue-800 font-medium">Your Comfort is Our Priority</h2>
+    <p class="text-xl md:text-2xl text-blue-800">
+        Whether you’re visiting Harare for business or leisure, Mongi Guest House offers a calm, secure, and
+        welcoming atmosphere combining <span class="font-medium">modern conveniences</span>,
+        <span class="font-medium">exceptional service</span>, and the warmth of <span class="font-medium">Zimbabwean
+        hospitality</span>.
+    </p>
 </div>
+
+<div id="rooms" class="md:h-10"></div>
+
+<!-- Rooms -->
+<div class="center h-16 px-4 max-w-6xl mx-auto mt-8">
+    <h1 class="text-4xl text-blue-800 font-medium"> Our Rooms </h1>
+</div>
+
+<div class="flex items-center justify-between text-center md:px-8 max-w-6xl mx-auto mt-6 text-blue-800">
+    <div class="mx-auto px-2 md:px-4">
+        <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-100">
+                <tr>
+                    <th class="px-4 py-3 text-center text-xl font-semibold text-blue-800">Room</th>
+                    <th class="px-4 py-3 text-center text-xl font-semibold text-blue-800">Description</th>
+                    <th class="px-4 py-3 text-left text-xl font-semibold text-blue-800"></th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+
+                <!-- Rooms-Junior -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Junior Suite with Balcony</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Our most luxurious suite with private balcony and spa-inspired bathroom.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                onclick="navigateToRoom('junior')"
+                                class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                onclick="navigateToGallery('junior-g')"
+                                class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Rooms-Family -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Deluxe Family Room</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Spacious and flexible — perfect for families or couples seeking extra comfort.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                onclick="navigateToRoom('family')"
+                                class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                onclick="navigateToGallery('family-g')"
+                                class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Rooms-Queen -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Deluxe Queen Suite</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Modern elegance and cozy sophistication; ideal for couples.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                    onclick="navigateToRoom('queen')"
+                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                    onclick="navigateToGallery('queen-g')"
+                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Rooms-Superior -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Superior Room</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Practical comfort with elegant design and hotel-quality amenities.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                    onclick="navigateToRoom('superior')"
+                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                    onclick="navigateToGallery('superior-g')"
+                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Rooms-Standard -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Standard Room</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Cozy and affordable with all essential comforts.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                    onclick="navigateToRoom('standard')"
+                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                    onclick="navigateToGallery('standard-g')"
+                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Rooms-Economy -->
+                <tr class="">
+                    <td class="px-4 py-3 text-xl font-medium text-blue-800">Economy Room</td>
+                    <td class="px-4 py-3 text-sm md:text-xl text-blue-800">
+                        Compact, comfortable, and budget-friendly for short stays.</td>
+                    <td class="px-2 py-3 text-xl text-gray-800">
+                        <div class="flex max-md:flex-col items-center gap-3">
+                            <a
+                                    onclick="navigateToRoom('economy')"
+                                    class="text-blue-800 text-sm md:text-lg bg-gray-200 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Details
+                            </a>
+                            <a
+                                    onclick="navigateToGallery('economy-g')"
+                                    class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                                hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                                ease-in-out whitespace-nowrap cursor-pointer"
+                            >
+                                View Gallery
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="center space-x-2 md:space-x-6 mt-6">
+    <p class="text-blue-800 font-medium text-md md:text-2xl">Discover Your Perfect Getaway.</p>
+    <a
+        class="text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+               hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+               ease-in-out whitespace-nowrap"
+        href="https://book.nightsbridge.com/37265" target="_blank"
+    >
+        Book Your Stay
+    </a>
+</div>
+
+
+<!-- Location -->
+<div class="center text-blue-800 font-semibold mt-12 text-4xl">Convenient Location</div>
+<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 p-6 max-w-6xl mx-auto gap-4">
+    <!-- Location-Description -->
+    <div class="center gap-4 text-blue-800 md:text-xl text-center order-2 md:order-1">
+        <!-- Location-Location -->
+        <div class="pr-4 md:pr-8 py-2 border-r border-r-blue-800 border-r-2 space-y-2 font-medium">
+            <p class="font-bold md:text-2xl center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-map-pin-icon lucide-map-pin justify-center">"
+                >
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8
+                     8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span class="mr-4">Location</span>
+            </p>
+            <p>Airport</p>
+            <p>CBD</p>
+            <p>Chapman Golf Club</p>
+            <p>Royal Harare Golf Club</p>
+            <p>Harare Botanical Gardens</p>
+            <p>Mukuvisi Woodlands</p>
+        </div>
+        <!-- Location-Distance -->
+        <div class="space-y-2 font-medium">
+            <p class="font-bold md:text-2xl center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="lucide lucide-timer-icon lucide-timer"
+                >
+                    <line x1="10" x2="14" y1="2" y2="2"/>
+                    <line x1="12" x2="15" y1="14" y2="11"/>
+                    <circle cx="12" cy="14" r="8"/>
+                </svg>
+                <span class="mr-4">Distance</span>
+            </p>
+            <p>18 min.</p>
+            <p>8 min.</p>
+            <p>7 min.</p>
+            <p>12 min.</p>
+            <p>15 min.</p>
+            <p>4 min.</p>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="flex flex-col items-center justify-center gap-2 order-1 md:order-2">
+        <div class="transform hover:scale-102 transition-transform duration-300 center">
+            <a
+                href="https://www.google.com/maps/place/Mongi+Guest+House/@-17.8342272,31.0311847,13z/data=!4m9!3m8!1s0x1931bb396a739083:0x48e93fb7e998c39c!5m2!4m1!1i2!8m2!3d-17.8312273!4d31.0954863!16s%2Fg%2F11ltsd091j?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="relative group block"
+            >
+                <img src="src/location.png" alt="location" class="border border-blue-900 w-120">
+                <div
+                    class="absolute inset-0 bg-black center opacity-0
+                    group-hover:opacity-70 transition-opacity duration-300"
+                >
+                    <span class="pt-4 text-white text-xl font-semibold opacity-100">Open in Google Maps</span>
+                </div>
+            </a>
+        </div>
+        <a
+                href="gallery.html"
+                class="md:hidden text-white text-xl bg-blue-800 px-4 py-2 rounded-md mt-4 h-12
+                     w-auto hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors
+                     duration-300 ease-in-out items-center"
+        >
+            Open in Google Maps
+        </a>
+    </div>
+</div>
+
+
+<!-- Front Page Images (Bottom) -->
+<div class="center mt-12 p-4 max-w-6xl mx-auto gap-3">
+    <span class="text-blue-800 text-xl md:text-2xl md:font-medium">Follow Us on our socials:</span>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/people/Mongi-Guest-House/61566407660600/?mibextid=LQQJ4d"
+       target="_blank"
+       class="transform hover:scale-105 transition-transform duration-300"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="lucide lucide-facebook-icon lucide-facebook text-blue-800"
+        >
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mongilodge?igsh=YXltY3BnMnF3aHh6&utm_source=qr"
+       target="_blank"
+       class="transform hover:scale-105 transition-transform duration-300"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="lucide lucide-instagram-icon lucide-instagram text-blue-800"
+        >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+        </svg>
+    </a>
+    <!-- Tiktok -->
+    <a href="https://www.tiktok.com/@mongilodge?_t=ZT-90KreGMDE1W&_r=1"
+       target="_blank"
+       class="transform hover:scale-105 transition-transform duration-300"
+    >
+        <img src="src/images/tiktok.svg" alt="TikTok" class="w-9">
+    </a>
+</div>
+
+
+<div class="grid grid-cols-3 gap-4 mx-auto px-4 max-w-6xl mt-8">
+    <div class="aspect-[4/3] overflow-hidden">
+        <img src="src/images/index/bottom1.JPG" class="w-full h-full object-cover" alt="Dining Area" />
+    </div>
+    <div class="aspect-[4/3] overflow-hidden">
+        <img src="src/images/index/bottom2.JPG" class="w-full h-full object-cover" alt="Outside View" />
+    </div>
+    <div class="aspect-[4/3] overflow-hidden">
+        <img src="src/images/index/bottom3.jpg" class="w-full h-full object-cover" alt="Bathroom" />
+    </div>
+</div>
+<div class="center p-4 max-w-6xl mx-auto">
+    <a
+            href="gallery.html"
+            class="text-white text-2xl bg-blue-800 px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-md mt-4 h-14
+                     w-auto hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors
+                     duration-300 ease-in-out items-center"
+    >
+        View Gallery
+    </a>
+</div>
+
+
+<!-- Frequently Asked Questions -->
+<section class="max-w-6xl mx-auto px-4 mt-4">
+    <div class="center text-4xl text-blue-800 mb-6">Frequently Asked Questions</div>
+
+    <!-- FAQ #1 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ1', 'arrowIconFAQ1', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+    >
+        <span class="text-xl pl-2">Do you have Wi-Fi available?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ1" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ1"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+            <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                <p class="ml-2">
+                    Absolutely! We offer unlimited high-speed fiber Wi-Fi throughout the entire property — perfect
+                    for work, streaming, or staying connected.
+                </p>
+            </div>
+    </div>
+
+    <!-- FAQ #2 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ2', 'arrowIconFAQ2', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
+               text-left"
+    >
+        <span class="text-xl pl-2">What happens during power cuts?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ2" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ2"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+            <p class="ml-2">
+                No worries! The guest house is fully equipped with backup solar power and a generator, ensuring
+                continuous electricity and hot water at all times.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ #3 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ3', 'arrowIconFAQ3', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+    >
+        <span class="text-xl pl-2">Do you offer airport pickup?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ3" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ3"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+            <p class="ml-2">
+                Yes! We provide airport transfers for your convenience. Simply tick the option on the booking form
+                or WhatsApp us your flight details, and we’ll handle the rest.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ #4 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ4', 'arrowIconFAQ4', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
+        text-left"
+    >
+        <span class="text-xl pl-2">Which room is the most spacious?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ4" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ4"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+            <p class="ml-2">
+                Our Junior Suite with Balcony is the most spacious — featuring a super-king bed, private balcony,
+                and a spa-style bath for ultimate relaxation.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ #5 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ5', 'arrowIconFAQ5', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+    >
+        <span class="text-xl pl-2">Do you have family rooms?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ5" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ5"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+            <p class="ml-2">
+                Yes — our Deluxe Family Room is ideal for families or small groups. It includes two ¾ beds that can
+                convert into a super-king bed for added flexibility.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ #6 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ6', 'arrowIconFAQ6', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+    >
+        <span class="text-xl pl-2">Are meals available?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ6" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ6"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
+            Absolutely!
+            <ul class="pl-8 list-disc space-y-1">
+                <li>Breakfast: Available 24/7</li>
+                <li>Lunch & Dinner: 11:00 AM – 10:00 PM</li>
+                <li>Snacks: Available anytime</li>
+            </ul>
+            We also cater to special dietary requests — just let us know in advance.
+        </div>
+    </div>
+
+    <!-- FAQ #7 -->
+    <button
+        onclick="toggleSection('expandableSectionFAQ7', 'arrowIconFAQ7', false)"
+        class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+    >
+        <span class="text-xl pl-2">Still have questions?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQ7" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQ7"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
+            Message us on WhatsApp <span class="font-semibold">+263 78 310 6946</span> or email
+            <a href="mailto:stay@mongilodge.com" class="font-semibold">stay@mongilodge.com</a>
+            — we’ll be happy to help!
+        </div>
+    </div>
+
+</section>
+
+<div class="h-10"></div>
+
+<!-- Footer -->
+<footer class="bg-blue-900 h-140 sm:h-100">
+    <div class="max-w-7xl grid grid-cols-2 md:grid-cols-4 mx-auto items-start justify-between p-6">
+        <!-- Address -->
+        <div class="text-center text-white">
+            <h1 class="text-3xl font-medium underline decoration-2">Address</h1>
+            <div class="flex flex-col items-center">
+                <p class="font-light text-xl italic">84 Sea Lodge (8th floor)</p>
+                <p class="font-light text-xl">28 Lagoon Drive</p>
+                <p class="font-light text-xl">Umhlanga Rocks,</p>
+                <p class="font-light text-xl">4320, South Africa</p>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="text-center text-white">
+            <h1 class="text-3xl font-medium underline decoration-2">Contact</h1>
+            <p class="font-light">84sealodge@gmail.com</p>
+            <p class="font-light">Call +27 76 633 0403</p>
+        </div>
+        <!-- Follow -->
+        <div class="text-center text-white">
+            <h1 class="text-3xl font-medium underline decoration-2">Follow</h1>
+            <div class="flex flex-col items-center">
+                <a
+                        class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
+                        href="https://www.facebook.com/people/Mongi-Guest-House/61566407660600/?mibextid=LQQJ4d"
+                        target="_blank"
+                >
+                    Facebook
+                </a>
+                <a
+                        class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
+                        href="https://www.instagram.com/mongilodge?igsh=YXltY3BnMnF3aHh6&utm_source=qr"
+                        target="_blank"
+                >
+                    Instagram
+                </a>
+                <a
+                        class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
+                        href="https://www.tiktok.com/@mongilodge?_t=ZT-90KreGMDE1W&_r=1"
+                        target="_blank"
+                >
+                    TikTok
+                </a>
+            </div>
+
+        </div>
+        <!-- Legal -->
+        <div class="text-center text-white">
+            <h1 class="text-3xl font-medium underline decoration-2">Legal</h1>
+            <a
+                    class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
+                    href="privacy-policy.html"
+            >
+                Privacy Policy
+            </a>
+        </div>
+    </div>
+    <h1 class="text-center mx-auto max-w-6xl text-6xl text-white mt-10">84 Sea Lodge</h1>
+    <p class="text-center mx-auto mt-4 max-w-6xl text-xl text-white">
+        &copy; <span id="year"></span> Kabs Realty Homes.
+    </p>
+
+</footer>
+
 </body>
 </html>
