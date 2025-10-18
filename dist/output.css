@@ -690,34 +690,10 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
-  .border-green-800 {
-    border-color: var(--color-green-800);
-  }
-  .border-green-900 {
-    border-color: var(--color-green-900);
-  }
-  .border-purple-800 {
-    border-color: var(--color-purple-800);
-  }
-  .border-purple-900 {
-    border-color: var(--color-purple-900);
-  }
   .border-x-blue-50\/0 {
     border-inline-color: color-mix(in srgb, oklch(97% 0.014 254.604) 0%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-inline-color: color-mix(in oklab, var(--color-blue-50) 0%, transparent);
-    }
-  }
-  .border-x-green-50\/0 {
-    border-inline-color: color-mix(in srgb, oklch(98.2% 0.018 155.826) 0%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-inline-color: color-mix(in oklab, var(--color-green-50) 0%, transparent);
-    }
-  }
-  .border-x-purple-50\/0 {
-    border-inline-color: color-mix(in srgb, oklch(97.7% 0.014 308.299) 0%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-inline-color: color-mix(in oklab, var(--color-purple-50) 0%, transparent);
     }
   }
   .border-t-blue-800\/0 {
@@ -726,26 +702,8 @@
       border-top-color: color-mix(in oklab, var(--color-blue-800) 0%, transparent);
     }
   }
-  .border-t-green-800\/0 {
-    border-top-color: color-mix(in srgb, oklch(44.8% 0.119 151.328) 0%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-top-color: color-mix(in oklab, var(--color-green-800) 0%, transparent);
-    }
-  }
-  .border-t-purple-800\/0 {
-    border-top-color: color-mix(in srgb, oklch(43.8% 0.218 303.724) 0%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-top-color: color-mix(in oklab, var(--color-purple-800) 0%, transparent);
-    }
-  }
   .border-r-blue-800 {
     border-right-color: var(--color-blue-800);
-  }
-  .border-r-green-800 {
-    border-right-color: var(--color-green-800);
-  }
-  .border-r-purple-800 {
-    border-right-color: var(--color-purple-800);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -754,12 +712,6 @@
     background-color: color-mix(in srgb, #000 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
-    }
-  }
-  .bg-black\/30 {
-    background-color: color-mix(in srgb, #000 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
     }
   }
   .bg-black\/60 {
@@ -786,56 +738,11 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
-  .bg-green-800 {
-    background-color: var(--color-green-800);
-  }
-  .bg-green-900 {
-    background-color: var(--color-green-900);
-  }
-  .bg-purple-800 {
-    background-color: var(--color-purple-800);
-  }
-  .bg-purple-900 {
-    background-color: var(--color-purple-900);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\/sealodge-bg\.jpg\'\)\] {
-    background-image: url('../sealodge-bg.jpg');
-  }
-  .bg-\[url\(\'\.\.\/src\/images\/sealodge-bg\.jpg\'\)\] {
-    background-image: url('../src/images/sealodge-bg.jpg');
-  }
-  .bg-\[url\(\'\.\/sealodge-bg\.jpg\'\)\] {
-    background-image: url('./sealodge-bg.jpg');
-  }
-  .bg-\[url\(\'\.\/src\/images\/sealodge-bg\.jpg\'\)\] {
-    background-image: url('./src/images/sealodge-bg.jpg');
-  }
   .bg-\[url\(\'\/src\/images\/sealodge-bg\.jpg\'\)\] {
     background-image: url('/src/images/sealodge-bg.jpg');
-  }
-  .bg-\[url\(\'sealodge-bg\.jpg\'\)\] {
-    background-image: url('sealodge-bg.jpg');
-  }
-  .bg-\[url\(\'src\/images\/sea-lodge-bg\.jpg\'\)\] {
-    background-image: url('src/images/sea-lodge-bg.jpg');
-  }
-  .bg-\[url\(\'src\/images\/sealodge-bg\.jpg\'\)\] {
-    background-image: url('src/images/sealodge-bg.jpg');
-  }
-  .bg-\[url\(\\\"src\/images\/sealodge-bg\.jpg\\\"\)\] {
-    background-image: url(\"src/images/sealodge-bg.jpg\");
-  }
-  .bg-\[url\(\\\'src\/images\/sealodge-bg\.jpg\\\'\)\] {
-    background-image: url(\'src/images/sealodge-bg.jpg\');
-  }
-  .bg-\[url\(sealodge-bg\.jpg\)\] {
-    background-image: url(sealodge-bg.jpg);
-  }
-  .bg-\[url\(src\/images\/sealodge-bg\.jpg\)\] {
-    background-image: url(src/images/sealodge-bg.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -899,9 +806,6 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -995,9 +899,6 @@
   .text-black {
     color: var(--color-black);
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
   .text-blue-800 {
     color: var(--color-blue-800);
   }
@@ -1015,15 +916,6 @@
   }
   .text-green-800 {
     color: var(--color-green-800);
-  }
-  .text-green-900 {
-    color: var(--color-green-900);
-  }
-  .text-purple-800 {
-    color: var(--color-purple-800);
-  }
-  .text-purple-900 {
-    color: var(--color-purple-900);
   }
   .text-red-700 {
     color: var(--color-red-700);
@@ -1158,27 +1050,6 @@
       }
     }
   }
-  .hover\:bg-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-600);
-      }
-    }
-  }
-  .hover\:bg-green-800 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-800);
-      }
-    }
-  }
-  .hover\:bg-purple-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-purple-100);
-      }
-    }
-  }
   .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
@@ -1204,41 +1075,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-800);
-      }
-    }
-  }
-  .hover\:text-green-500 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-500);
-      }
-    }
-  }
-  .hover\:text-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-600);
-      }
-    }
-  }
-  .hover\:text-green-800 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-800);
-      }
-    }
-  }
-  .hover\:text-purple-500 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-purple-500);
-      }
-    }
-  }
-  .hover\:text-purple-600 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-purple-600);
       }
     }
   }
@@ -1268,11 +1104,6 @@
   .max-md\:ml-2 {
     @media (width < 48rem) {
       margin-left: calc(var(--spacing) * 2);
-    }
-  }
-  .max-md\:flex {
-    @media (width < 48rem) {
-      display: flex;
     }
   }
   .max-md\:hidden {
@@ -1349,12 +1180,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-  .sm\:text-3xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .sm\:text-lg {
