@@ -1,3 +1,6 @@
+// Link shortener
+const airbnbLink = "https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf";
+
 // Mobile Navigation
 const menuBtn = document.getElementById("menuBtn");
 const menuIcon = document.getElementById("menuIcon");
