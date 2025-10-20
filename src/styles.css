@@ -36,6 +36,10 @@ header {
     @apply max-md:justify-start max-md:pl-5;
 }
 
+.filter-btn {
+    cursor: pointer;
+}
+
 /* Styling for Contact - Country Codes*/
 #dropdown {
     transition: all 0.2s ease-in-out;
