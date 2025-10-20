@@ -733,6 +733,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-r {
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
@@ -826,6 +830,9 @@
   }
   .bg-\[url\(\'\/src\/images\/sealodgepics\/sealodge-bg\.jpg\'\)\] {
     background-image: url('/src/images/sealodgepics/sealodge-bg.jpg');
+  }
+  .bg-\[url\(\'src\/images\/sealodgepics\/sealodge-bg\.jpg\'\)\] {
+    background-image: url('src/images/sealodgepics/sealodge-bg.jpg');
   }
   .bg-cover {
     background-size: cover;
