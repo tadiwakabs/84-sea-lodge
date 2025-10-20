@@ -365,10 +365,10 @@ function renderAmenities(filter = "Featured") {
     filtered.forEach(a => {
         const div = document.createElement("div");
         div.className =
-            "flex items-center gap-3 p-3 border rounded-full hover:bg-gray-50 transition";
+            "flex items-center gap-3 p-3 border border-gray-600 rounded-full hover:bg-gray-50 transition";
         div.innerHTML = `
-      <div class="text-blue-600 w-6 h-6">${a.icon}</div>
-      <span class="text-gray-700 font-medium">${a.name}</span>
+      <div class="w-6 h-6">${a.icon}</div>
+      <span class="text-gray-700 font-medium md:text-lg">${a.name}</span>
     `;
         amenitiesGrid.appendChild(div);
     });
