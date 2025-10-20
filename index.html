@@ -9,69 +9,71 @@
     <link rel="icon" type="image/svg+xml" href="src/logo.svg"/>
     <link href="./dist/output.css" rel="stylesheet">
     <script src="index.js" defer></script>
+    <script src="amenities.js" defer></script>
 </head>
 <body class="bg-gray-100">
-    <!-- Navbar -->
-    <header class="fixed w-full z-40 bg-white shadow-md">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
-            <!-- Logo -->
-            <div class="flex items-center space-x-4">
-                <img src="src/logo.svg" width="36" alt="logo">
-                <a href="index.html" class="hidden md:flex text-2xl font-bold text-blue-800">
-                    84 Sea Lodge
-                </a>
-            </div>
-            <a href="index.html" class="md:hidden flex text-2xl font-bold text-blue-800">
+
+<!-- Navbar -->
+<header class="fixed w-full z-40 bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <img src="src/logo.svg" width="36" alt="logo">
+            <a href="index.html" class="hidden md:flex text-2xl font-bold text-blue-800">
                 84 Sea Lodge
             </a>
-
-            <!-- Desktop Nav -->
-            <div class="hidden md:flex space-x-6 text-blue-800 font-medium text-sm md:text-lg">
-                <a href="index.html" class="hover:text-blue-600 text-center">Home</a>
-                <a href="rooms.html" class="hover:text-blue-600 text-center">Rooms</a>
-                <a href="gallery.html" class="hover:text-blue-600 text-center">Gallery</a>
-                <a href="contact.html" class="hover:text-blue-600 text-center">Contact</a>
-                <a href="#" onclick="window.open(airbnbLink, '_blank')"
-                   class="hover:text-blue-600 text-center">Book Now</a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="menuBtn" type="button" class="md:hidden p-2 text-blue-800 focus:outline-none z-50">
-                <!-- Hamburger Icon -->
-                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg"
-                     class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-
-                <!-- Close Icon -->
-                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
-                     class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
-        </nav>
-
-        <!-- Mobile Nav Overlay -->
-        <div id="mobileMenu"
-             class="fixed inset-0 bg-white bg-opacity-95 backdrop-blur-md z-30 flex flex-col
-              items-center justify-center space-y-8 text-2xl font-semibold text-blue-800
-              opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
-        >
-            <a href="index.html" class="hover:text-blue-600" onclick="toggleMenu()">Home</a>
-            <a href="rooms.html" class="hover:text-blue-600" onclick="toggleMenu()">Rooms</a>
-            <a href="gallery.html" class="hover:text-blue-600" onclick="toggleMenu()">Gallery</a>
-            <a href="contact.html" class="hover:text-blue-600" onclick="toggleMenu()">Contact</a>
-            <a href="https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf"
-               target="_blank"
-               class="hover:text-blue-600" onclick="toggleMenu()">Book Now</a>
         </div>
-    </header>
+        <a href="index.html" class="md:hidden flex text-2xl font-bold text-blue-800">
+            84 Sea Lodge
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-6 text-blue-800 font-medium text-sm md:text-lg">
+            <a href="index.html" class="hover:text-blue-600 text-center">Home</a>
+            <a href="rooms.html" class="hover:text-blue-600 text-center">Rooms</a>
+            <a href="gallery.html" class="hover:text-blue-600 text-center">Gallery</a>
+            <a href="contact.html" class="hover:text-blue-600 text-center">Contact</a>
+            <a href="#" onclick="window.open(airbnbLink, '_blank')"
+               class="hover:text-blue-600 text-center">Book Now</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" type="button" class="md:hidden p-2 text-blue-800 focus:outline-none z-50">
+            <!-- Hamburger Icon -->
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg"
+                 class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <!-- Close Icon -->
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
+                 class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobileMenu"
+         class="fixed inset-0 bg-white bg-opacity-95 backdrop-blur-md z-30 flex flex-col
+          items-center justify-center space-y-8 text-2xl font-semibold text-blue-800
+          opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
+    >
+        <a href="index.html" class="hover:text-blue-600" onclick="toggleMenu()">Home</a>
+        <a href="rooms.html" class="hover:text-blue-600" onclick="toggleMenu()">Rooms</a>
+        <a href="gallery.html" class="hover:text-blue-600" onclick="toggleMenu()">Gallery</a>
+        <a href="contact.html" class="hover:text-blue-600" onclick="toggleMenu()">Contact</a>
+        <a href="https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf"
+           target="_blank"
+           class="hover:text-blue-600" onclick="toggleMenu()">Book Now</a>
+    </div>
+</header>
 
     <!-- Header -->
-<div class="bg-[url('/src/images/sealodge-bg.jpg')] bg-cover bg-center bg-no-repeat h-auto md:h-200">
+<div class="bg-[url('/src/images/sealodgepics/sealodge-bg.jpg')] bg-cover bg-center bg-no-repeat h-auto md:h-200">
     <div class="h-full w-full bg-black/20 center flex-col pt-24 pb-4 md:pt-60 md:pb-60">
         <!-- Title -->
         <div class="h-full w-full px-4 max-w-6xl mx-auto ">
@@ -113,10 +115,8 @@
         Explore your dream beachside escape!
     </h1>
     <a
-            class="center text-white text-base sm:text-lg md:text-xl bg-blue-800
-       px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-md
-       hover:bg-blue-100 hover:text-blue-600 font-medium
-       transition-colors duration-300 ease-in-out"
+        class="center text-white text-base sm:text-lg md:text-xl bg-blue-800 px-4 sm:px-6 md:px-8 py-2 sm:py-3
+        rounded-md hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300 ease-in-out"
             href="#rooms"
     >
         Step Inside
@@ -127,32 +127,253 @@
 
 <!-- Description -->
 <div class="grid grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto px-4 mt-8 gap-6">
+    <div>
     <p class="text-xl md:text-2xl text-blue-800">
         Welcome to 84 Sea Lodge! Nestled on Lagoon Drive, just steps from the sand, this stylish, newly renovated
-        apartment offers the perfect blend of comfort and luxury. Whether you’re planning a weekend getaway or an
+        apartment offers the perfect blend of comfort and luxury.
+    </p>
+    <p class="text-xl md:text-2xl text-blue-800 mt-2">
+        Whether you’re planning a weekend getaway or an
         extended stay, this upmarket retreat has everything you need to relax, recharge, and explore.
     </p>
-    <img src="src/images/index/escape-image.jpg" class="w-full object-cover" alt="Example Suite 2" />
+    </div>
+    <img src="src/images/sealodgepics/dining-1.jpg" class="w-full object-cover" alt="Example Suite 2" />
 </div>
 
 <!-- Amenities -->
-<div id="amenities" class="md:h-20"></div>
+<div id="amenities" class=""></div>
 <div
-     class="center h-20 px-4 max-w-6xl mx-auto mt-8">
+     class="center h-15 px-4 max-w-6xl mx-auto mt-8">
     <h1 class="text-4xl text-blue-800 font-medium"> Amenities </h1>
 </div>
 
 <!-- Amenities Description -->
-<div
-    class="center px-4 max-w-6xl mx-auto mb-4">
-    <p class="text-xl md:text-2xl text-blue-800 text-center">
-        At Mongi Guest House, every stay is designed for comfort, style, and convenience. Choose from a range of
-        beautifully appointed ensuite rooms to suit your needs: from cozy <span class="font-medium">Economy</span>
-        and <span class="font-medium">Standard</span> rooms to spacious <span class="font-medium">Superior</span>,
-        <span class="font-medium">Deluxe</span>, and <span class="font-medium">Junior</span> Suites. Each room
-        blends modern design with homely touches to create the perfect retreat after a day in Harare.
-    </p>
-</div>
+<section class="">
+    <!-- Row 1 -->
+    <div class="grid grid-cols-2 md:grid-cols-4 px-4 max-w-4xl mx-auto md:my-8 space-y-6 text-lg md:text-xl">
+        <!-- Beach Access -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-waves-icon lucide-waves text-gray-600">"
+                >
+                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Beach Access</span>
+        </div>
+
+        <!-- Wi-fi -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-wifi-icon lucide-wifi text-gray-600">"
+                >
+                <path d="M12 20h.01"/>
+                <path d="M2 8.82a15 15 0 0 1 20 0"/>
+                <path d="M5 12.859a10 10 0 0 1 14 0"/>
+                <path d="M8.5 16.429a5 5 0 0 1 7 0"/>
+            </svg>
+            <span class="text-gray-600 font-medium">Wi-Fi</span>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-utensils-crossed-icon lucide-utensils-crossed text-gray-600">"
+                >
+                <path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/>
+                <path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/>
+                <path d="m2.1 21.8 6.4-6.3"/>
+                <path d="m19 5-7 7"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Kitchen </span>
+        </div>
+
+        <!-- Parking -->
+        <div class="center-left space-x-4 mb-[21px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-square-parking-icon lucide-square-parking text-gray-600">"
+                >
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Free Parking </span>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid grid-cols-2 md:grid-cols-4 px-4 max-w-4xl mx-auto md:my-8 space-y-6 text-lg md:text-xl">
+        <!-- Beach Access -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-waves-icon lucide-waves text-gray-600">"
+                >
+                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Beach Access</span>
+        </div>
+
+        <!-- Wi-fi -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-wifi-icon lucide-wifi text-gray-600">"
+                >
+                <path d="M12 20h.01"/>
+                <path d="M2 8.82a15 15 0 0 1 20 0"/>
+                <path d="M5 12.859a10 10 0 0 1 14 0"/>
+                <path d="M8.5 16.429a5 5 0 0 1 7 0"/>
+            </svg>
+            <span class="text-gray-600 font-medium">Wi-Fi</span>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-utensils-crossed-icon lucide-utensils-crossed text-gray-600">"
+                >
+                <path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/>
+                <path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/>
+                <path d="m2.1 21.8 6.4-6.3"/>
+                <path d="m19 5-7 7"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Kitchen </span>
+        </div>
+
+        <!-- Parking -->
+        <div class="center-left space-x-4 mb-[21px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-square-parking-icon lucide-square-parking text-gray-600">"
+                >
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Free Parking </span>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="grid grid-cols-2 md:grid-cols-4 px-4 max-w-4xl mx-auto md:my-8 space-y-6 text-lg md:text-xl">
+        <!-- Beach Access -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-waves-icon lucide-waves text-gray-600">"
+                >
+                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Beach Access</span>
+        </div>
+
+        <!-- Wi-fi -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-wifi-icon lucide-wifi text-gray-600">"
+                >
+                <path d="M12 20h.01"/>
+                <path d="M2 8.82a15 15 0 0 1 20 0"/>
+                <path d="M5 12.859a10 10 0 0 1 14 0"/>
+                <path d="M8.5 16.429a5 5 0 0 1 7 0"/>
+            </svg>
+            <span class="text-gray-600 font-medium">Wi-Fi</span>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="center-left space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-utensils-crossed-icon lucide-utensils-crossed text-gray-600">"
+                >
+                <path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"/>
+                <path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"/>
+                <path d="m2.1 21.8 6.4-6.3"/>
+                <path d="m19 5-7 7"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Kitchen </span>
+        </div>
+
+        <!-- Parking -->
+        <div class="center-left space-x-4 mb-[21px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-square-parking-icon lucide-square-parking text-gray-600">"
+                >
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+            </svg>
+            <span class="text-gray-600 font-medium"> Free Parking </span>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="center mx-auto space-x-4 bg-gray-300 h-10 rounded-full max-w-6xl">
+        <div class="center md:space-x-2 bg-gray-100 rounded-full px-4 py-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="text-gray-600 lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <span class="max-md:hidden text-gray-600 font-medium">Featured</span>
+        </div>
+        <div class="center md:space-x-2 rounded-full px-4 py-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="text-gray-600 lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <span class="max-md:hidden text-gray-600 font-medium">Comfort & Essentials</span>
+        </div>
+        <div class="center md:space-x-2 rounded-full px-4 py-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="text-gray-600 lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <span class="max-md:hidden text-gray-600 font-medium">Kitchen & dining</span>
+        </div>
+        <div class="center md:space-x-2 rounded-full px-4 py-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-gray-600 lucide-shield-ellipsis-icon lucide-shield-ellipsis"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+            <span class="max-md:hidden text-gray-600 font-medium">Home safety</span>
+        </div>
+        <div class="center md:space-x-2 rounded-full px-4 py-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="text-gray-600 lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <span class="max-md:hidden text-gray-600 font-medium">Location features</span>
+        </div>
+        <div class="center md:space-x-2 rounded-full px-4 py-1">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg"
+                 class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <span class="max-md:hidden text-gray-600 font-medium">All</span>
+        </div>
+
+    </div>
+
+    <div class="max-w-5xl mx-auto p-6">
+        <!-- Filter buttons -->
+        <div class="flex flex-wrap gap-2 mb-6">
+            <button class="filter-btn bg-blue-600 text-white px-3 py-1 rounded" data-filter="All">All</button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 rounded" data-filter="Featured">Featured</button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 rounded" data-filter="Comfort & Essentials">Comfort & Essentials</button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 rounded" data-filter="Home safety">Home safety</button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 rounded" data-filter="Kitchen and dining">Kitchen & dining</button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 rounded" data-filter="Location Features">Location features</button>
+        </div>
+
+        <!-- Amenities grid -->
+        <div id="amenitiesGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+    </div>
+
+</section>
 
 <!-- Amenities-Rooms -->
 <section class="max-w-6xl mx-auto px-4 py-0.5">
@@ -937,7 +1158,7 @@
     </div>
     <h1 class="text-center mx-auto max-w-6xl text-6xl text-white mt-10">84 Sea Lodge</h1>
     <p class="text-center mx-auto mt-4 max-w-6xl text-xl text-white">
-        &copy; <span id="year"></span> Kabs Realty Homes.
+        &copy; <span id="year"></span> Sunrise Coastal Group.
     </p>
 
 </footer>

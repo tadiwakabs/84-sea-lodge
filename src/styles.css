@@ -28,6 +28,14 @@ header {
     justify-content: center;
 }
 
+.center-left {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply max-md:justify-start max-md:pl-5;
+}
+
 /* Styling for Contact - Country Codes*/
 #dropdown {
     transition: all 0.2s ease-in-out;

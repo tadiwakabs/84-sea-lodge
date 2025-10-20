@@ -122,6 +122,8 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     startAutoplay();
 });
 
+
+
 // Copyright Year
 document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
