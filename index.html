@@ -735,8 +735,33 @@
 <section class="max-w-6xl mx-auto px-4 mt-4">
     <div class="center text-4xl text-blue-800 my-6 font-medium">Frequently Asked Questions</div>
 
+    <!-- FAQ-Check-in & Check-out-->
+    <h2 class="center text-2xl text-blue-800 font-medium">Check-in & Check-out</h2>
+    <button
+            onclick="toggleSection('expandableSectionFAQCheck', 'arrowIconFAQCheck', false)"
+            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+    >
+        <span class="text-xl pl-2">What are the check-in and check-out times?</span>
+        <!-- Arrow icon -->
+        <svg id="arrowIconFAQCheck" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="expandableSectionFAQCheck"
+         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
+            Check-in is from <span class="font-semibold">2 PM</span>, and check-out is by
+            <span class="font-semibold">10 AM</span>. Early check-in or late check-out may be  possible depending on
+            availability.
+        </div>
+    </div>
+
     <!-- FAQ-Location -->
-    <h2 class="center text-2xl text-blue-800 font-medium">Location & Access</h2>
+    <h2 class="center text-2xl text-blue-800 font-medium mt-12">Location & Access</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
         <!-- FAQ #1 -->
         <div>
