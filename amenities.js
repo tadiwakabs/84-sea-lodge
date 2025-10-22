@@ -31,7 +31,9 @@ function renderAmenities(filter = "Featured") {
     if (filter === "Featured") {
         filtered = amenities.filter((a) => a.featured);
     } else if (filter !== "All") {
-        filtered = amenities.filter((a) => a.category === filter);
+        filtered = amenities.filter(a =>
+            Array.isArray(a.category) ? a.category.includes(filter) : a.category === filter
+        );
     }
 
     // Set title
