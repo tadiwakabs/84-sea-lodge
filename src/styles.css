@@ -36,6 +36,13 @@ header {
     @apply max-md:justify-start max-md:pl-5;
 }
 
+.between {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .filter-btn {
     cursor: pointer;
 }
