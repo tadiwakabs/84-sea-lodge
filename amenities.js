@@ -36,7 +36,7 @@ const amenities = [
 
     {
         // Amenity
-        name: "Free Washer",
+        name: "Washer (in-unit)",
         featured: true,
         category: "Comfort & Essentials",
         icon: `
@@ -55,7 +55,7 @@ const amenities = [
 
     {
         // Amenity
-        name: "Free Dryer",
+        name: "Dryer (in-unit)",
         featured: true,
         category: "Comfort & Essentials",
         icon: `

@@ -733,218 +733,718 @@
 
 <!-- Frequently Asked Questions -->
 <section class="max-w-6xl mx-auto px-4 mt-4">
-    <div class="center text-4xl text-blue-800 mb-6">Frequently Asked Questions</div>
+    <div class="center text-4xl text-blue-800 my-6 font-medium">Frequently Asked Questions</div>
 
-    <!-- FAQ #1 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ1', 'arrowIconFAQ1', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Do you have Wi-Fi available?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ1" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <!-- FAQ-Location -->
+    <h2 class="center text-2xl text-blue-800 font-medium">Location & Access</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ #1 -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ1', 'arrowIconFAQ1', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">How far is 84 Sea Lodge from Umhlanga Beach?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ1" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ1"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                Absolutely! We offer unlimited high-speed fiber Wi-Fi throughout the entire property — perfect
-                for work, streaming, or staying connected.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ1"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        The beach is just a short walk away — about 180 meters (2–3 minutes).
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- FAQ #2 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ2', 'arrowIconFAQ2', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
+        <!-- FAQ #2 -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ2', 'arrowIconFAQ2', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
                text-left"
-    >
-        <span class="text-xl pl-2">What happens during power cuts?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ2" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+            >
+                <span class="text-xl pl-2">How far is 84 Sea Lodge from the Promenade?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ2" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ2"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                No worries! The guest house is fully equipped with backup solar power and a generator, ensuring
-                continuous electricity and hot water at all times.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ2"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        You can access the Umhlanga Promenade directly from the beachfront path.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #3 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ3', 'arrowIconFAQ3', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Do you offer airport pickup?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ3" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ #3 -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ3', 'arrowIconFAQ3', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Is the property close to restaurants and shops?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ3" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ3"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                Yes! We provide airport and local transfers for your convenience at a small fee. Please send us
-                your flight or travel details in advance to confirm arrangements.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ3"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes. We are within walking distance of Umhlanga Village, which has a wide choice of
+                        restaurants, cafés, and shops — about a 5–7 minute walk.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ #4 -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ4', 'arrowIconFAQ4', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+           text-left"
+            >
+                <span class="text-xl pl-2">How far is the airport?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ4" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ4"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        King Shaka International Airport is around 15 minutes by car (≈ 18 km).
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #4 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ4', 'arrowIconFAQ4', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none
-        text-left"
-    >
-        <span class="text-xl pl-2">What are your check-in and check-out times?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ4" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ4"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+    <!-- FAQ-Apartment -->
+    <h2 class="mt-12 center text-2xl text-blue-800 font-medium">Apartment Details</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ5', 'arrowIconFAQ5', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">How many people can the apartment accommodate?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ5" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-            <ul class="pl-8 list-disc space-y-1">
-                <li><span class="font-medium">Check-in</span>: 11:30 AM</li>
-                <li><span class="font-medium">Check-out</span>: 10:00 AM</li>
-            </ul>
-            Early check-in and late check-out are available subject to room availability (fees may apply).
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ5"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        The unit comfortably accommodates up to 6 guests in 3 bedrooms (2 bathrooms).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ6', 'arrowIconFAQ6', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+            >
+                <span class="text-xl pl-2">Is it a private apartment or shared?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ6" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ6"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        It’s a <span class="font-semibold">fully private self-catering unit</span> with exclusive use
+                        of all amenities — balcony, kitchen, living area, and BBQ.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #5 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ5', 'arrowIconFAQ5', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Do you have family rooms?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ5" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ7', 'arrowIconFAQ7', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Does the apartment have a sea view?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ7" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ5"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                Yes — our Deluxe Family Room is ideal for families or small groups. It includes two ¾ beds that can
-                convert into a super-king bed for added flexibility.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ7"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes! The balcony offers ocean views — perfect for morning coffee or sunset BBQs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ8', 'arrowIconFAQ8', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+           text-left"
+            >
+                <span class="text-xl pl-2">Is there an elevator?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ8" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ8"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, the building has an elevator for easy access.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #6 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ6', 'arrowIconFAQ6', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Are meals available?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ6" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <!-- FAQ-Facilities & Amenities -->
+    <h2 class="mt-12 center text-2xl text-blue-800 font-medium">Facilities & Amenities</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ9', 'arrowIconFAQ9', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Is there a swimming pool?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ9" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ6"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
-            Absolutely!
-            <ul class="pl-8 list-disc space-y-1">
-                <li>Breakfast: Available 24/7</li>
-                <li>Lunch & Dinner: 11:00 AM – 10:00 PM</li>
-                <li>Snacks: Available anytime</li>
-            </ul>
-            We also cater to special dietary requests — just let us know in advance.
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ9"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, guests have access to the outdoor swimming pool overlooking the garden area.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ10', 'arrowIconFAQ10', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+            >
+                <span class="text-xl pl-2">Does the apartment have air conditioning?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ10" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ10"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, A/C is available in every room.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #7 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ7', 'arrowIconFAQ7', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Do you have parking?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ7" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ11', 'arrowIconFAQ11', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Is there Wi-Fi?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ11" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ7"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                Yes, <span class="font-medium">free self-parking</span> is available on-site for all guests.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ11"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, we offer fast, free <span class="font-semibold">Fibre Wi-Fi</span> throughout the
+                        apartment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ12', 'arrowIconFAQ12', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+           text-left"
+            >
+                <span class="text-xl pl-2">Is there a washing machine or dryer?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ12" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ12"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, <span class="font-semibold">full-size washer and dryer inside unit</span> provided for
+                        your convenience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ13', 'arrowIconFAQ13', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Does the kitchen have cooking facilities?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ13" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ13"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        The kitchen is fully equipped with fridge, oven, stovetop, microwave, dishwasher, Nespresso
+                        machine, kettle, and toaster.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ14', 'arrowIconFAQ14', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+            >
+                <span class="text-xl pl-2">Are towels and linen provided?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ14" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ14"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, all linen and towels are included. Beach towels are also available.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- FAQ #8 -->
-    <button
-            onclick="toggleSection('expandableSectionFAQ8', 'arrowIconFAQ8', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
-    >
-        <span class="text-xl pl-2">Is the place secure?</span>
-        <!-- Arrow icon -->
-        <svg id="arrowIconFAQ8" class="w-5 h-5 transform transition-transform duration-300 ml-4"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
-        </svg>
-    </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ15', 'arrowIconFAQ15', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Is daily cleaning included?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ15" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
 
-    <!-- Collapsible content -->
-    <div id="expandableSectionFAQ8"
-         class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
-        <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
-            <p class="ml-2">
-                Yes, the property is <span class="font-medium">fully fenced</span> and equipped with
-                <span class="font-medium">limited-access electric gates</span> for your safety and privacy.
-            </p>
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ15"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Daily housekeeping is available daily except on Sundays.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ-Blank for Grid -->
+        <div>
+
         </div>
     </div>
+
+    <!-- FAQ-Safety & Policies -->
+    <h2 class="mt-12 center text-2xl text-blue-800 font-medium">Safety & Policies</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ18', 'arrowIconFAQ18', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Is the property secure?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ18" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ18"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes, the complex has <span class="font-semibold">24-hour security</span>, controlled access,
+                        and cameras in common areas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ19', 'arrowIconFAQ19', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+            >
+                <span class="text-xl pl-2">Is smoking allowed?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ19" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ19"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Smoking is not permitted.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ20', 'arrowIconFAQ20', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Are parties or events allowed?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ20" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ20"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Out of respect for neighbors and building rules, parties are not permitted.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ21', 'arrowIconFAQ21', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+           text-left"
+            >
+                <span class="text-xl pl-2">Do you allow pets?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ21" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ21"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Unfortunately, pets are not allowed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ-Booking & Payments -->
+    <h2 class="mt-12 center text-2xl text-blue-800 font-medium">Booking & Payments</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ22', 'arrowIconFAQ22', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">How can I book directly?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ22" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ22"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        You can book securely <span class="font-semibold">directly with us</span> by clicking on the
+                        Book Now button. Direct bookings may qualify for special rates.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ23', 'arrowIconFAQ23', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+            >
+                <span class="text-xl pl-2">What payment methods are accepted?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ23" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ23"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        We accept major credit cards and EFT payments for direct bookings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-4">
+        <!-- FAQ -->
+        <div>
+            <button
+                onclick="toggleSection('expandableSectionFAQ24', 'arrowIconFAQ24', false)"
+                class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+            >
+                <span class="text-xl pl-2">Do you require a refundable damage deposit?</span>
+                <!-- Arrow icon -->
+                <svg id="arrowIconFAQ24" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Collapsible content -->
+            <div id="expandableSectionFAQ24"
+                 class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                    <p class="ml-2">
+                        Yes. A refundable damage deposit of <span class="font-semibold">ZAR 2,000</span>
+                        (<span class="font-semibold">approximately USD 115</span>) is required. The deposit is charged
+                        7 days before arrival and will be fully refunded within 7 days after check-out, once the
+                        property has been inspected and no damage is found.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ-Empty (To add Cancellation Policy Here) -->
+        <div>
+
+        </div>
+    </div>
+
+
+    <!-- FAQ-Parking -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mt-8 md:mt-12">
+        <div>
+            <h2 class="center text-2xl text-blue-800 font-medium">Parking</h2>
+            <!-- FAQ -->
+            <div>
+                <button
+                    onclick="toggleSection('expandableSectionFAQ16', 'arrowIconFAQ16', false)"
+                    class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
+                >
+                    <span class="text-xl pl-2">Is parking available?</span>
+                    <!-- Arrow icon -->
+                    <svg id="arrowIconFAQ16" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <!-- Collapsible content -->
+                <div id="expandableSectionFAQ16"
+                     class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                    <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                        <p class="ml-2">
+                            Yes, <span class="font-semibold">free secure covered parking</span> is available on-site
+                            for guests.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ-Family & Group Stays -->
+        <div class="max-md:mt-8">
+            <!-- FAQ -->
+            <h2 class="center text-2xl text-blue-800 font-medium">Family & Group Stays</h2>
+            <div>
+                <button
+                    onclick="toggleSection('expandableSectionFAQ17', 'arrowIconFAQ17', false)"
+                    class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left
+               text-left"
+                >
+                    <span class="text-xl pl-2">Is the apartment family-friendly?</span>
+                    <!-- Arrow icon -->
+                    <svg id="arrowIconFAQ17" class="w-5 h-5 transform transition-transform duration-300 ml-4"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <!-- Collapsible content -->
+                <div id="expandableSectionFAQ17"
+                     class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
+                    <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8">
+                        <p class="ml-2">
+                            Absolutely! We love hosting families. The apartment features 3 spacious bedrooms — two
+                            with queen-size beds and 1 with 2 twin beds, perfect for children or additional guests. It’s located
+                            just a short walk from the beach, promenade, and nearby playgrounds, making it an ideal choice
+                            for a relaxed family getaway.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- FAQ End (Still have Q's?) -->
     <button
-            onclick="toggleSection('expandableSectionFAQEnd', 'arrowIconFAQEnd', false)"
-            class="h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none"
+        onclick="toggleSection('expandableSectionFAQEnd', 'arrowIconFAQEnd', false)"
+        class="mt-8 h-20 w-full flex items-center justify-between md:justify-left text-blue-800 px-4 py-2 select-none text-left"
     >
         <span class="text-xl pl-2">Still have questions?</span>
         <!-- Arrow icon -->
@@ -959,8 +1459,8 @@
     <div id="expandableSectionFAQEnd"
          class="transition-all duration-500 ease-in-out overflow-hidden max-h-0 border-b border-blue-800">
         <div class="text-lg text-blue-800 pl-4 list-disc space-y-1 mb-8 ml-2">
-            Message us on WhatsApp <span class="font-semibold">+263 78 310 6946 / +263 78 187 4399</span> or email
-            <a href="mailto:stay@mongilodge.com" class="font-semibold">stay@mongilodge.com</a>
+            Message us on WhatsApp <span class="font-semibold">+27 76 633 0403.</span> or email
+            <a href="mailto:stay@mongilodge.com" class="font-semibold">stay@84Sealodge.com</a>
             — we’ll be happy to help!
         </div>
     </div>
@@ -985,7 +1485,7 @@
         <!-- Contact -->
         <div class="text-center text-white">
             <h1 class="text-3xl font-medium underline decoration-2">Contact</h1>
-            <p class="font-light">84sealodge@gmail.com</p>
+            <p class="font-light">stay@84SeaLodge.com</p>
             <p class="font-light">Call +27 76 633 0403</p>
         </div>
         <!-- Follow -->
@@ -994,21 +1494,21 @@
             <div class="flex flex-col items-center">
                 <a
                         class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                        href="https://www.facebook.com/people/Mongi-Guest-House/61566407660600/?mibextid=LQQJ4d"
+                        href=""
                         target="_blank"
                 >
                     Facebook
                 </a>
                 <a
                         class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                        href="https://www.instagram.com/mongilodge?igsh=YXltY3BnMnF3aHh6&utm_source=qr"
+                        href=""
                         target="_blank"
                 >
                     Instagram
                 </a>
                 <a
                         class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                        href="https://www.tiktok.com/@mongilodge?_t=ZT-90KreGMDE1W&_r=1"
+                        href=""
                         target="_blank"
                 >
                     TikTok
@@ -1021,7 +1521,7 @@
             <h1 class="text-3xl font-medium underline decoration-2">Legal</h1>
             <a
                     class="text-xl hover:text-blue-500 transition-colors duration-300 ease-in-out"
-                    href="privacy-policy.html"
+                    href=""
             >
                 Privacy Policy
             </a>
