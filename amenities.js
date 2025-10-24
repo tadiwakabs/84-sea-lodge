@@ -47,7 +47,7 @@ function renderAmenities(filter = "Featured") {
             "flex items-center gap-3 p-3 border border-gray-600 rounded-md hover:bg-gray-50 transition";
         div.innerHTML = `
       <div class="w-6 h-6">${a.icon}</div>
-      <span class="text-gray-700 font-medium md:text-lg">${a.name}</span>
+      <span class="text-gray-800 font-medium md:text-lg">${a.name}</span>
     `;
         amenitiesGrid.appendChild(div);
     });

@@ -19,7 +19,7 @@ menuBtn.addEventListener("click", toggleMenu);
 
 // Rooms section navigation
 function navigateToRoom(roomId) {
-    if (window.location.pathname.includes("rooms.html")) {
+    if (window.location.pathname.includes("attractions.html")) {
         const section = document.getElementById(roomId);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
@@ -121,6 +121,81 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     // Autoplay on load
     startAutoplay();
 });
+
+// Load room info
+fetch("src/data/rooms.json")
+    .then((res) => res.json())
+    .then((rooms) => {
+        const tableBody = document.getElementById("roomsTableBody");
+        tableBody.innerHTML = "";
+
+        rooms.forEach((room) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+        <td class="px-4 py-3 text-center">
+          <img src="${room.image}" alt="${room.name}" 
+          class="w-32 h-24 object-cover rounded-md mx-auto shadow-sm cursor-pointer card-hover">
+        </td>
+        <td class="md:px-4 py-3 text-lg md:text-xl font-medium text-blue-800">
+          ${room.name}
+        </td>
+        <td class="px-2 md:px-4 py-3 text-sm md:text-xl text-gray-800">
+          ${room.description}
+        </td>
+        <td class="px-2 py-3 text-xl">
+          <div class="flex max-md:flex-col items-center gap-3">
+            <a
+              onclick="navigateToGallery('${room.galleryId}')"
+              class="max-md:hidden text-white text-sm md:text-lg bg-blue-800 px-3 py-2 rounded-md w-auto
+                     hover:bg-blue-100 hover:text-blue-600 font-medium transition-colors duration-300
+                     ease-in-out whitespace-nowrap cursor-pointer"
+            >
+              View Gallery
+            </a>
+          </div>
+        </td>
+      `;
+            tableBody.appendChild(row);
+        });
+    })
+    .catch((err) => console.error("Error loading rooms:", err));
+
+// Fullscreen image viewer logic
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeButton = imageModal.querySelector("button");
+
+// Open modal when an image is clicked
+document.addEventListener("click", (e) => {
+    if (e.target.tagName === "IMG" && (e.target.closest("#roomsTableBody") || e.target.closest("#footerImages"))) {
+        modalImage.src = e.target.src;
+        imageModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // disable scroll
+    }
+});
+
+// Close modal when the Close button is clicked
+closeButton.addEventListener("click", () => {
+    imageModal.classList.add("hidden");
+    document.body.style.overflow = "auto"; // re-enable scroll
+});
+
+// Close modal when clicking outside the image or pressing Escape
+imageModal.addEventListener("click", (e) => {
+    if (e.target === imageModal) {
+        imageModal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        imageModal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+    }
+});
+
+
 
 
 
