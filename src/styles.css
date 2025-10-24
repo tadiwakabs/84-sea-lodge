@@ -20,6 +20,10 @@ header {
     @apply transition-transform duration-300 hover:scale-[1.03] hover:shadow-lg;
 }
 
+@utility faq-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+}
+
 .center {
     text-align: center;
     display: flex;

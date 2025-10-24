@@ -98,25 +98,24 @@
     <h1 class="text-4xl font-semibold text-blue-800 px-4 mt-4">Photo Gallery</h1>
 </div>
 <div class="max-w-6xl mx-auto flex items-center justify-center">
-    <p class="text-2xl font-medium text-blue-800 px-4 mt-4 text-center">Check out our stay in detail!</p>
+    <p class="text-2xl font-medium text-blue-800 px-4 mt-6 text-center">Check out our stay in detail!</p>
 </div>
 
 <!-- Room Gallery -->
 <div class="px-4 max-w-6xl mx-auto">
-    <h1 class="text-4xl font-medium text-blue-800 px-4 mt-4 flex justify-center">Rooms</h1>
 
-    <div id="bedroom-g" class="h-16"></div>
-    <!-- Rooms-Junior -->
+    <div id="interior-g" class="h-16"></div>
+    <!-- Interior -->
     <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
         <!-- Toggle button -->
         <button
-                onclick="toggleSection('expandableSectionJunior', 'arrowIconJunior')"
+                onclick="toggleSection('expandableSectionInterior', 'arrowIconInterior')"
                 class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
                 px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
         >
-            <span class="text-2xl md:text-3xl">Junior Suite with Balcony</span>
+            <span class="text-2xl md:text-3xl">Interior</span>
             <!-- Arrow icon -->
-            <svg id="arrowIconJunior" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
+            <svg id="arrowIconInterior" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M19 9l-7 7-7-7" />
@@ -124,33 +123,59 @@
         </button>
 
         <!-- Collapsible content -->
-        <div id="expandableSectionJunior"
+        <div id="expandableSectionInterior"
              class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
                   border-l border-r border-b border-blue-800">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                    src="src/images/index/junior1.jpg" alt="Junior 1"
-                    class="w-full h-full object-cover"
-                    onclick="openLightbox('junior', 0)"
-                />
-                <img
-                        src="src/images/index/junior2.jpg" alt="Junior 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('junior', 1)"
-                />
-                <img
-                        src="src/images/index/junior3.jpg" alt="Junior 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('junior', 2)"
-                />
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/bedroom1-1.jpg" alt="Bedroom 1"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 0)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/kitchen-1.jpg" alt="Kitchen"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 5)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/bathroom1.jpeg" alt="Bathroom"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 10)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/living-3.jpg" alt="Living Room"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 14)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/dining-2.jpg" alt="Dining Area"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 16)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/balcony-1.jpg" alt="Balcony"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('interior', 17)"
+                    />
+                </div>
             </div>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
                 <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('junior', 0)"
+                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800 px-10 py-3
+                        mt-4 rounded-md w-full sm:w-auto hover:bg-blue-100 hover:text-blue-600 font-medium
+                        transition-colors duration-300 ease-in-out cursor-pointer"
+                        onclick="openLightbox('interior', 0)"
                 >
                     View All
                 </a>
@@ -159,7 +184,8 @@
                                px-8 py-3 mt-4 rounded-md w-full sm:w-auto
                                hover:bg-blue-100 hover:text-blue-600 font-medium
                                transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
+                        href="https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf"
+                        target="_blank"
                 >
                     Book Now
                 </a>
@@ -168,331 +194,11 @@
 
     </section>
 
-    <div id="bathroom-g" class="h-16"></div>
-
-    <!-- Rooms-Family -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionFamily', 'arrowIconFamily')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-2xl md:text-3xl">Deluxe Family Suite</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconFamily" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionFamily"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
-                  border-l border-r border-b border-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/family1.jpg" alt="Family 1"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('family', 0)"
-                />
-                <img
-                        src="src/images/index/family6.jpg" alt="Family 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('family', 3)"
-                />
-                <img
-                        src="src/images/index/family7.jpg" alt="Family 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('family', 4)"
-                />
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('family', 0)"
-                >
-                    View All
-                </a>
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                               px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                               hover:bg-blue-100 hover:text-blue-600 font-medium
-                               transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                >
-                    Book Now
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="kitchen-g" class="h-16"></div>
-
-    <!-- Rooms-Queen -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionQueen', 'arrowIconQueen')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-2xl md:text-3xl">Deluxe Queen Suite</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconQueen" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionQueen"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
-                  border-l border-r border-b border-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/queen1.jpg" alt="Queen 1"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('queen', 0)"
-                />
-                <img
-                        src="src/images/index/queen4.jpg" alt="Queen 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('queen', 3)"
-                />
-                <img
-                        src="src/images/index/queen3.png" alt="Queen 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('queen', 2)"
-                />
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('queen', 0)"
-                >
-                    View All
-                </a>
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                               px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                               hover:bg-blue-100 hover:text-blue-600 font-medium
-                               transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                >
-                    Book Now
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="dining-g" class="h-16"></div>
-
-    <!-- Rooms-Superior -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionSuperior', 'arrowIconSuperior')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-2xl md:text-3xl">Superior Double Room</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconSuperior" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionSuperior"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
-                  border-l border-r border-b border-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/superior1.jpg" alt="Superior 1"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('superior', 0)"
-                />
-                <img
-                        src="src/images/index/superior2.jpg" alt="Superior 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('superior', 1)"
-                />
-                <img
-                        src="src/images/index/superior3.jpg" alt="Superior 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('superior', 2)"
-                />
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('superior', 0)"
-                >
-                    View All
-                </a>
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                               px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                               hover:bg-blue-100 hover:text-blue-600 font-medium
-                               transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                >
-                    Book Now
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="living-g" class="h-16"></div>
-
-    <!-- Rooms-Standard -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionStandard', 'arrowIconStandard')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-2xl md:text-3xl">Standard Double Room</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconStandard" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionStandard"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
-                  border-l border-r border-b border-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/standard1.jpeg" alt="Standard 1"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('standard', 0)"
-                />
-                <img
-                        src="src/images/index/standard2.jpeg" alt="Standard 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('standard', 1)"
-                />
-                <img
-                        src="src/images/index/standard3.jpeg" alt="Standard 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('standard', 2)"
-                />
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('standard', 0)"
-                >
-                    View All
-                </a>
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                               px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                               hover:bg-blue-100 hover:text-blue-600 font-medium
-                               transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                >
-                    Book Now
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="balcony-g" class="h-16"></div>
-
-    <!-- Rooms-Balcony -->
-    <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
-        <!-- Toggle button -->
-        <button
-                onclick="toggleSection('expandableSectionBalcony', 'arrowIconBalcony')"
-                class="h-20 w-full border border-x-blue-50/0 flex items-center justify-between text-blue-800
-                px-4 py-2 select-none transform hover:scale-102 transition-transform duration-300"
-        >
-            <span class="text-2xl md:text-3xl">Balcony</span>
-            <!-- Arrow icon -->
-            <svg id="arrowIconBalcony" class="w-5 h-5 transform transition-transform duration-300 rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-
-        <!-- Collapsible content -->
-        <div id="expandableSectionBalcony"
-             class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
-                  border-l border-r border-b border-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/economy2.JPG" alt="Economy 1"
-                        class="w-full h-auto object-cover"
-                        onclick="openLightbox('economy', 0)"
-                />
-                <img
-                        src="src/images/index/economy3new.jpg" alt="Economy 2"
-                        class="w-full h-auto object-cover"
-                        onclick="openLightbox('economy', 1)"
-                />
-                <img
-                        src="src/images/index/economy4new.jpg" alt="Economy 3"
-                        class="w-full h-auto object-cover"
-                        onclick="openLightbox('economy', 2)"
-                />
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                                   px-10 py-3 mt-4 rounded-md w-full sm:w-auto
-                                   hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
-                        onclick="openLightbox('economy', 0)"
-                >
-                    View All
-                </a>
-                <a
-                        class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
-                               px-8 py-3 mt-4 rounded-md w-full sm:w-auto
-                               hover:bg-blue-100 hover:text-blue-600 font-medium
-                               transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
-                >
-                    Book Now
-                </a>
-            </div>
-        </div>
-
-    </section>
 
 </div>
 
 <!-- Exterior Gallery -->
 <div class="px-4 max-w-6xl mx-auto mt-24">
-    <h1 class="text-4xl font-medium text-blue-800 px-4 flex justify-center">Lodge</h1>
 
     <!-- Exterior -->
     <section class="max-w-6xl mx-auto px-4 py-0.5 mt-4">
@@ -516,28 +222,34 @@
              class="transition-all duration-500 ease-in-out overflow-hidden max-h-500
                   border-l border-r border-b border-blue-800">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 max-w-6xl">
-                <img
-                        src="src/images/index/gallery/exterior1.JPG" alt="Exterior 1"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('exterior', 0)"
-                />
-                <img
-                        src="src/images/index/gallery/exterior2.JPG" alt="Exterior 2"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('exterior', 1)"
-                />
-                <img
-                        src="src/images/index/gallery/exterior3.JPG" alt="Exterior 3"
-                        class="w-full h-full object-cover"
-                        onclick="openLightbox('exterior', 2)"
-                />
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/pool-1.jpg" alt="Pool"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('exterior', 0)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/parking2.jpg" alt="Designated Parking"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('exterior', 1)"
+                    />
+                </div>
+                <div class="aspect-[4/3]">
+                    <img
+                            src="src/images/sealodgepics/sealodgesign.jpg" alt="Entrance"
+                            class="w-full h-full object-cover cursor-pointer card-hover"
+                            onclick="openLightbox('exterior', 2)"
+                    />
+                </div>
             </div>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 px-4">
                 <a
                         class="flex items-center justify-center text-white text-lg sm:text-2xl bg-blue-800
                                    px-10 py-3 mt-4 rounded-md w-full sm:w-auto
                                    hover:bg-blue-100 hover:text-blue-600 font-medium
-                                   transition-colors duration-300 ease-in-out"
+                                   transition-colors duration-300 ease-in-out cursor-pointer"
                         onclick="openLightbox('exterior', 0)"
                 >
                     View All
@@ -547,7 +259,8 @@
                                px-8 py-3 mt-4 rounded-md w-full sm:w-auto
                                hover:bg-blue-100 hover:text-blue-600 font-medium
                                transition-colors duration-300 ease-in-out"
-                        href="https://book.nightsbridge.com/37265" target="_blank"
+                        href="https://www.airbnb.com/rooms/1441934862557544337?viralityEntryPoint=1&unique_share_id=27A4CEF5-AD7B-44C4-B271-94C8ECEBE0D4&slcid=2d28e9bd3d8346a9a1099e908ad196f7&s=76&adults=1&slug=iypWBqjm&source_impression_id=p3_1760292638_P3fgqirwE75wOvBf"
+                        target="_blank"
                 >
                     Book Now
                 </a>
@@ -565,7 +278,7 @@
 
     <!-- Close button -->
     <button onclick="closeLightbox()"
-            class="absolute top-4 right-4 text-gray-900 text-6xl font-semibold z-50">&times;</button>
+            class="absolute top-4 right-4 text-gray-900 text-6xl font-semibold z-50 cursor-pointer">&times;</button>
 
     <!-- Fullscreen image -->
     <div class="relative w-full h-full flex flex-col items-center justify-center px-4">

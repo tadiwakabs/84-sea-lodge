@@ -35,11 +35,15 @@ function navigateToGallery(galleryId) {
         const section = document.getElementById(galleryId);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
+            // Optional: open lightbox immediately if desired
+            openLightboxFromId(galleryId);
         }
     } else {
-        window.location.href = `gallery.html#${galleryId}`;
+        // Navigate with query parameter for easy detection
+        window.location.href = `gallery.html?room=${encodeURIComponent(galleryId)}`;
     }
 }
+
 
 // Optional: if using this inside a mobile menu
 function handleRoomClick(roomId) {
