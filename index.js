@@ -1,6 +1,3 @@
-// Link shortener
-const airbnbLink = "https://book.nightsbridge.com/23664?bbrtid=91";
-
 // Mobile Navigation
 const menuBtn = document.getElementById("menuBtn");
 const menuIcon = document.getElementById("menuIcon");
