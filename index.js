@@ -131,6 +131,7 @@ fetch("src/data/rooms.json")
 
         rooms.forEach((room) => {
             const row = document.createElement("tr");
+            row.className = "hover:bg-gray-50 transition-colors duration-300 ease-in-out";
             row.innerHTML = `
         <td class="px-4 py-3 text-center">
           <img src="${room.image}" alt="${room.name}" 
