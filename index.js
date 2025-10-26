@@ -144,7 +144,7 @@ fetch("src/data/rooms.json")
         <td class="px-2 md:px-4 py-3 text-sm md:text-xl text-gray-800">
           ${room.description}
         </td>
-        <td class="px-2 py-3 text-xl">
+        <td class="md:px-2 py-3 text-xl">
           <div class="flex max-md:flex-col items-center gap-3">
             <a
               onclick="navigateToGallery('${room.galleryId}')"

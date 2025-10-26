@@ -1,6 +1,6 @@
 [
   {
-    "name": "Beach Access",
+    "name": "Private Beach Access",
     "featured": true,
     "category": ["Location Features"],
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide text-gray-600 lucide-waves'><path d='M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1'/><path d='M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1'/><path d='M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1'/></svg>"
@@ -56,14 +56,14 @@
   },
 
   {
-    "name": "Smart TV with DSTV",
+    "name": "Smart TV / DSTV (All Rooms)",
     "featured": true,
     "category": ["Location Features"],
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide text-gray-600 lucide-tv'><path d='m17 2-5 5-5-5'/><rect width='20' height='15' x='2' y='7' rx='2'/></svg>"
   },
 
   {
-    "name": "Air Conditioning",
+    "name": "Air Conditioning (All Rooms)",
     "featured": true,
     "category": ["Comfort & Essentials"],
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide text-gray-600 lucide-air-vent'><path d='M18 17.5a2.5 2.5 0 1 1-4 2.03V12'/><path d='M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2'/><path d='M6 8h12'/><path d='M6.6 15.572A2 2 0 1 0 10 17v-5'/></svg>"
@@ -91,7 +91,7 @@
   },
 
   {
-    "name": "Wi-Fi",
+    "name": "Fibre Wi-Fi",
     "featured": true,
     "category": ["Location Features", "Comfort & Essentials"],
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-wifi text-gray-600'><path d='M12 20h.01'/><path d='M2 8.82a15 15 0 0 1 20 0'/><path d='M5 12.859a10 10 0 0 1 14 0'/><path d='M8.5 16.429a5 5 0 0 1 7 0'/></svg>"
@@ -168,14 +168,14 @@
   },
 
   {
-    "name": "BBQ Grill",
+    "name": "Grill (Balcony & Poolside)",
     "featured": true,
     "category": ["Kitchen and Dining", "Location Features"],
     "icon": "<svg width=\"28px\" height=\"28px\" viewBox=\"0 0 45 45\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g clip-path=\"url(#clip0_2_1364)\"> <path d=\"M19 25.875L14 36.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M27 25.875L32 36.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M23 36.875V25.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M12 15.875C12 21.95 16.925 26.875 23 26.875C29.075 26.875 34 21.95 34 15.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M30 31.875H16\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M13 18.875H9\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M37 18.875H33\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M19.705 14.875C16.152 14.875 11 14.875 11 14.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M35 14.875C35 14.875 32.307 14.875 29.527 14.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> <path d=\"M30.994 -13.125C30.999 -8.292 27 -7.042 27 -2.125C27 2.792 30.999 4.042 30.994 8.875C30.989 13.708 27 15.042 27 19.875M25.994 -13.125C25.999 -8.292 22 -7.042 22 -2.125C22 2.792 25.999 4.042 25.994 8.875C25.989 13.708 22 15.042 22 19.875M20.994 -13.125C20.999 -8.292 17 -7.042 17 -2.125C17 2.792 20.999 4.042 20.994 8.875C20.989 13.708 17 15.042 17 19.875M30.994 -35.191C30.999 -30.358 27 -29.108 27 -24.191C27 -19.274 30.999 -18.024 30.994 -13.191V-13.125C30.999 -8.292 27 -7.042 27 -2.125C27 2.792 30.999 4.042 30.994 8.875C30.989 13.708 27 15.042 27 19.875M25.994 -35.191C25.999 -30.358 22 -29.108 22 -24.191C22 -19.274 25.999 -18.024 25.994 -13.191V-13.125C25.999 -8.292 22 -7.042 22 -2.125C22 2.792 25.999 4.042 25.994 8.875C25.989 13.708 22 15.042 22 19.875M20.994 -35.191C20.999 -30.358 17 -29.108 17 -24.191C17 -19.274 20.999 -18.024 20.994 -13.191V-13.125C20.999 -8.292 17 -7.042 17 -2.125C17 2.792 20.999 4.042 20.994 8.875C20.989 13.708 17 15.042 17 19.875\" stroke=\"#47505c\" stroke-width=\"2.07\" stroke-linejoin=\"round\"></path> </g> <defs> <clipPath id=\"clip0_2_1364\"> <rect width=\"45\" height=\"45\" fill=\"white\"></rect> </clipPath> </defs> </g></svg>"
   },
 
   {
-    "name": "Free Parking",
+    "name": "Free Parking (Covered)",
     "featured": true,
     "category": ["Location Features"],
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide text-gray-600 lucide-square-parking'><rect width='18' height='18' x='3' y='3' rx='2'/><path d='M9 17V7h4a3 3 0 0 1 0 6H9'/></svg>"

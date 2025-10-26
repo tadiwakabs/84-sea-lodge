@@ -1,13 +1,13 @@
 [
   {
     "name": "Bedrooms",
-    "description": "Elegant bedrooms with plush bedding and calming coastal décor.",
+    "description": "Three elegant bedrooms with plush bedding and calming coastal décor.",
     "image": "src/images/sealodgepics/bedroom1-1.jpg",
     "galleryId": "bedroom-g"
   },
   {
-    "name": "Bathroom",
-    "description": "Modern bathroom with walk-in shower and premium amenities.",
+    "name": "Bathrooms",
+    "description": "Two modern bathrooms with walk-in showers and premium amenities.",
     "image": "src/images/sealodgepics/bathroom1.jpeg",
     "galleryId": "bathroom-g"
   },
